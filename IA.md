@@ -8,18 +8,18 @@ em `logs/`. A IA não rodou a miniatura no Docker. Antes da entrega, ela só
 testou a lógica com processos locais, e esses logs de teste **não** fazem parte
 do repositório.
 
-> **A equipe precisa completar:** as colunas "O que a equipe fez" e a seção de
-> erros encontrados ao rodar no Docker. Apaguem esta nota antes de entregar.
+> **A equipe precisa completar:** o Erro 2, encontrado ao rodar no Docker.
+> Apaguem esta nota antes de entregar.
 
 ## Prompts mais importantes
 
 | # | Prompt (resumo) | O que a IA respondeu ou gerou | O que a equipe fez (aceitou, mudou ou descartou) |
 |---|---|---|---|
-| 1 | Enviamos o enunciado do laudo e pedimos ajuda para escolher o artigo | Sugeriu o artigo 2 (Google Cloud, jun/2025) porque o repositório do Origem tem o mesmo mecanismo: retry com intervalo fixo em `app/queue.py`, disjuntor de 15 s e `restart: always`. Sugeriu o artigo 1 (AWS) como plano B | *preencher* |
-| 2 | "Pode fazer": pedimos a miniatura completa | 4 serviços em Python sem dependências (políticas, controle com supervisor, cliente, injetor), `docker-compose.yml` com duas redes, `rodar.py` e `analisar.py` | *preencher* |
-| 3 | Modelo do banco de políticas (embutido no pedido 2) | Fila com capacidade fixa em que as leituras abandonadas continuam sendo processadas, para que o efeito manada se sustente | *preencher* |
-| 4 | Métricas do laudo (embutido no pedido 2) | Definições de tempo até a falha (erro >= 50 %), tempo até a recuperação (5 s seguidos com erro <= 5 %) e % de erro, todas calculadas a partir dos CSV brutos | *preencher* |
-| 5 | Pedimos o laudo dividido em partes, com checklist | Rascunho do laudo (Partes A a D) com os números das nossas execuções. Ao conferir com os CSV, a própria IA corrigiu duas afirmações: o intervalo de saturação do banco (tinha escrito t = 20 a 80; o log mostra t = 12 a 79) e um subtítulo do artigo que não tinha como confirmar | *preencher* |
+| 1 | Enviamos o enunciado do laudo e pedimos ajuda para escolher o artigo | Sugeriu o artigo 2 (Google Cloud, jun/2025) porque o repositório do Origem tem o mesmo mecanismo: retry com intervalo fixo em `app/queue.py`, disjuntor de 15 s e `restart: always`. Sugeriu o artigo 1 (AWS) como plano B | **Aceitou** o artigo 2, porque o mesmo mecanismo aparece no nosso repositório (`app/queue.py`, `restart: always`). **Descartou** o plano B (artigo 1, AWS) |
+| 2 | "Pode fazer": pedimos a miniatura completa | 4 serviços em Python sem dependências (políticas, controle com supervisor, cliente, injetor), `docker-compose.yml` com duas redes, `rodar.py` e `analisar.py` | **Aceitou** a estrutura dos 4 serviços e das duas redes. Rodou os 3 cenários no Docker de um integrante para confirmar que funcionavam, em vez de confiar no teste local da IA |
+| 3 | Modelo do banco de políticas (embutido no pedido 2) | Fila com capacidade fixa em que as leituras abandonadas continuam sendo processadas, para que o efeito manada se sustente | **Aceitou** o modelo, mas registrou no laudo (Parte B, limitações) que o colapso é provocado pelos parâmetros escolhidos e não prevê a escala real |
+| 4 | Métricas do laudo (embutido no pedido 2) | Definições de tempo até a falha (erro >= 50 %), tempo até a recuperação (5 s seguidos com erro <= 5 %) e % de erro, todas calculadas a partir dos CSV brutos | **Aceitou** as definições e conferiu que a análise reproduz os mesmos números a partir dos CSV brutos |
+| 5 | Pedimos o laudo dividido em partes, com checklist | Rascunho do laudo (Partes A a D) com os números das nossas execuções. Ao conferir com os CSV, a própria IA corrigiu duas afirmações: o intervalo de saturação do banco (tinha escrito t = 20 a 80; o log mostra t = 12 a 79) e um subtítulo do artigo que não tinha como confirmar | **Mudou:** a equipe conferiu a linha do tempo da Parte A contra o texto oficial do Google, e a citação passou a apontar o parágrafo exato de "What happened?". **Aceitou** as duas correções de números. **Mudou** o resumo, incluindo a equipe e a disciplina |
 
 ## Erros da IA encontrados ao rodar o código
 
