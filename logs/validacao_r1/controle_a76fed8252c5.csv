@@ -1,0 +1,9 @@
+ts,replica,pid,evento,detalhe
+1794517426.562,a76fed8252c5,7,supervisor_aguardando,3.53
+1794517430.756,a76fed8252c5,8,processo_iniciado,backoff=sem_backoff validar=1
+1794517430.884,a76fed8252c5,8,politica_carregada,versao=1 tentativas=1
+1794517461.514,a76fed8252c5,8,politica_recusada,versao=2
+1794517466.618,a76fed8252c5,8,politica_recusada,versao=2
+1794517471.723,a76fed8252c5,8,politica_recusada,versao=2
+1794517476.828,a76fed8252c5,8,politica_recusada,versao=2
+1794517481.932,a76fed8252c5,8,politica_atualizada,versao=3

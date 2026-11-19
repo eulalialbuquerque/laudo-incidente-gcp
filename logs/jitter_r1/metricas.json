@@ -1,0 +1,28 @@
+{
+  "execucao": "jitter_r1",
+  "cenario": "jitter",
+  "erro_base_pct": 0.0,
+  "primeiro_erro_s": 0.6210000514984131,
+  "houve_falha": true,
+  "tempo_ate_falha_s": 3,
+  "botao_vermelho_s": 20.00100016593933,
+  "intervencao_s": 80.00100016593933,
+  "recuperacao_s_apos_botao": 4.998999834060669,
+  "recuperou_antes_da_intervencao": true,
+  "erro_pct_desde_injecao": 9.558107845045747,
+  "requisicoes_desde_injecao": 10274,
+  "erros_desde_injecao": 982,
+  "erro_pct_botao_ate_recuperar": 26.94300518134715,
+  "quedas_de_processo": 46,
+  "replicas": 30,
+  "politicas_chegadas_botao_ate_recuperar": 25,
+  "politicas_chegadas_por_replica": 0.8333333333333334,
+  "politicas_desperdicio_pct": 0.0,
+  "politicas_recusadas": 0,
+  "politicas_ocupacao_max": 34,
+  "tipos_erro": {
+    "erro_ConnectionRefusedError": 78,
+    "503": 903,
+    "erro_ConnectionResetError": 1
+  }
+}

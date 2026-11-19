@@ -1,0 +1,26 @@
+ts,replica,pid,evento,detalhe
+1794517073.090,f832a89a27e1,7,supervisor_aguardando,1.31
+1794517075.120,f832a89a27e1,8,processo_iniciado,backoff=sem_backoff validar=0
+1794517075.256,f832a89a27e1,8,politica_carregada,versao=1 tentativas=1
+1794517106.872,f832a89a27e1,8,recarga_falhou,TimeoutError
+1794517112.877,f832a89a27e1,8,recarga_falhou,TimeoutError
+1794517117.880,f832a89a27e1,8,recarga_falhou,HTTPError
+1794517122.884,f832a89a27e1,8,recarga_falhou,HTTPError
+1794517127.888,f832a89a27e1,8,recarga_falhou,HTTPError
+1794517132.892,f832a89a27e1,8,recarga_falhou,HTTPError
+1794517137.896,f832a89a27e1,8,recarga_falhou,HTTPError
+1794517142.899,f832a89a27e1,8,recarga_falhou,HTTPError
+1794517147.904,f832a89a27e1,8,recarga_falhou,HTTPError
+1794517152.908,f832a89a27e1,8,recarga_falhou,HTTPError
+1794517157.911,f832a89a27e1,8,recarga_falhou,HTTPError
+1794517162.916,f832a89a27e1,8,recarga_falhou,HTTPError
+1794517167.921,f832a89a27e1,8,recarga_falhou,HTTPError
+1794517172.925,f832a89a27e1,8,recarga_falhou,HTTPError
+1794517177.929,f832a89a27e1,8,recarga_falhou,HTTPError
+1794517182.932,f832a89a27e1,8,recarga_falhou,HTTPError
+1794517187.936,f832a89a27e1,8,recarga_falhou,HTTPError
+1794517192.941,f832a89a27e1,8,recarga_falhou,HTTPError
+1794517197.945,f832a89a27e1,8,recarga_falhou,HTTPError
+1794517202.950,f832a89a27e1,8,recarga_falhou,HTTPError
+1794517207.954,f832a89a27e1,8,recarga_falhou,HTTPError
+1794517213.059,f832a89a27e1,8,politica_atualizada,versao=3

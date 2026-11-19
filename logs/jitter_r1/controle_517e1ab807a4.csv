@@ -1,0 +1,30 @@
+ts,replica,pid,evento,detalhe
+1794517253.261,517e1ab807a4,7,supervisor_aguardando,5.53
+1794517259.416,517e1ab807a4,8,processo_iniciado,backoff=jitter validar=0
+1794517259.590,517e1ab807a4,8,politica_carregada,versao=1 tentativas=1
+1794517280.110,517e1ab807a4,8,crash,"TypeError(""int() argument must be a string, a bytes-like object or a real number, not 'NoneType'"")"
+1794517280.134,517e1ab807a4,7,processo_encerrado,codigo=1 duracao_s=21.34
+1794517280.135,517e1ab807a4,7,supervisor_aguardando,0.19
+1794517280.440,517e1ab807a4,57,processo_iniciado,backoff=jitter validar=0
+1794517280.712,517e1ab807a4,57,crash,"TypeError(""int() argument must be a string, a bytes-like object or a real number, not 'NoneType'"")"
+1794517280.734,517e1ab807a4,7,processo_encerrado,codigo=1 duracao_s=0.41
+1794517280.734,517e1ab807a4,7,supervisor_aguardando,0.65
+1794517281.505,517e1ab807a4,59,processo_iniciado,backoff=jitter validar=0
+1794517282.319,517e1ab807a4,59,crash,"TypeError(""int() argument must be a string, a bytes-like object or a real number, not 'NoneType'"")"
+1794517282.341,517e1ab807a4,7,processo_encerrado,codigo=1 duracao_s=0.96
+1794517282.341,517e1ab807a4,7,supervisor_aguardando,0.66
+1794517283.123,517e1ab807a4,64,processo_iniciado,backoff=jitter validar=0
+1794517284.148,517e1ab807a4,64,carga_falhou,TimeoutError apos 1024 ms; nova tentativa em 0.38 s
+1794517285.533,517e1ab807a4,64,carga_falhou,TimeoutError apos 1003 ms; nova tentativa em 0.27 s
+1794517286.810,517e1ab807a4,64,carga_falhou,TimeoutError apos 1003 ms; nova tentativa em 1.83 s
+1794517289.646,517e1ab807a4,64,carga_falhou,TimeoutError apos 1003 ms; nova tentativa em 1.00 s
+1794517291.650,517e1ab807a4,64,carga_falhou,TimeoutError apos 1002 ms; nova tentativa em 5.43 s
+1794517298.078,517e1ab807a4,64,carga_falhou,TimeoutError apos 1003 ms; nova tentativa em 1.25 s
+1794517300.116,517e1ab807a4,64,politica_carregada,versao=3 tentativas=7
+1794517361.379,517e1ab807a4,64,recarga_falhou,HTTPError
+1794517371.488,517e1ab807a4,64,recarga_falhou,HTTPError
+1794517391.805,517e1ab807a4,64,recarga_falhou,HTTPError
+1794517396.810,517e1ab807a4,64,recarga_falhou,HTTPError
+1794517401.814,517e1ab807a4,64,recarga_falhou,HTTPError
+1794517406.818,517e1ab807a4,64,recarga_falhou,HTTPError
+1794517411.822,517e1ab807a4,64,recarga_falhou,HTTPError

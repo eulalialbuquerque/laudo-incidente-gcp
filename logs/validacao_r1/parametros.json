@@ -1,0 +1,25 @@
+{
+  "execucao": "validacao_r1",
+  "cenario": "validacao",
+  "rodada": 1,
+  "parametros": {
+    "REPLICAS": "30",
+    "CAPACIDADE": "1",
+    "CUSTO_MS": "100",
+    "FILA_MAX": "100",
+    "TIMEOUT_S": "1.0",
+    "RECARGA_S": "5",
+    "AQUECIMENTO_S": "30",
+    "INCIDENTE_S": "20",
+    "INTERVENCAO_APOS_S": "60",
+    "DURACAO_S": "150",
+    "BACKOFF": "sem_backoff",
+    "VALIDAR": "1",
+    "EXECUCAO": "validacao_r1"
+  },
+  "inicio": "2026-11-12T18:03:38-03:00",
+  "host": "Linux 7.2.4-3-cachyos (x86_64)",
+  "cpus_host": 20,
+  "docker": "29.7.2",
+  "duracao_real_s": 151.0
+}

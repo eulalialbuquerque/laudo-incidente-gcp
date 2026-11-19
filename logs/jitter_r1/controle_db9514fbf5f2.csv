@@ -1,0 +1,8 @@
+ts,replica,pid,evento,detalhe
+1794517258.950,db9514fbf5f2,6,supervisor_aguardando,8.81
+1794517268.446,db9514fbf5f2,7,processo_iniciado,backoff=jitter validar=0
+1794517268.573,db9514fbf5f2,7,politica_carregada,versao=1 tentativas=1
+1794517284.786,db9514fbf5f2,7,recarga_falhou,TimeoutError
+1794517290.789,db9514fbf5f2,7,recarga_falhou,TimeoutError
+1794517296.793,db9514fbf5f2,7,recarga_falhou,TimeoutError
+1794517301.896,db9514fbf5f2,7,politica_atualizada,versao=3

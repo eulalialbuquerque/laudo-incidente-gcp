@@ -1,0 +1,6 @@
+ts,evento,detalhe
+1794517249.133,inicio,aquecimento_s=30.0 incidente_s=20.0 intervencao_apos_s=60.0 duracao_s=150.0
+1794517279.136,politica_em_branco,"{""versao"": 2, ""projeto"": ""origem"", ""limite_por_minuto"": null}"
+1794517299.137,botao_vermelho,"{""versao"": 3, ""projeto"": ""origem"", ""limite_por_minuto"": 100}"
+1794517359.137,intervencao_manual,protecao ligada no banco de politicas
+1794517399.133,fim,

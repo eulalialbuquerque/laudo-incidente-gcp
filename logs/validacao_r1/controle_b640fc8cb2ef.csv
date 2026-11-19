@@ -1,0 +1,9 @@
+ts,replica,pid,evento,detalhe
+1794517438.375,b640fc8cb2ef,7,supervisor_aguardando,3.93
+1794517442.932,b640fc8cb2ef,8,processo_iniciado,backoff=sem_backoff validar=1
+1794517443.148,b640fc8cb2ef,8,politica_carregada,versao=1 tentativas=1
+1794517458.460,b640fc8cb2ef,8,politica_recusada,versao=2
+1794517463.563,b640fc8cb2ef,8,politica_recusada,versao=2
+1794517468.668,b640fc8cb2ef,8,politica_recusada,versao=2
+1794517473.774,b640fc8cb2ef,8,politica_recusada,versao=2
+1794517478.878,b640fc8cb2ef,8,politica_atualizada,versao=3

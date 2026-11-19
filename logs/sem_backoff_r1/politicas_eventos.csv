@@ -1,0 +1,5 @@
+ts,evento,detalhe
+1794517071.047,inicio,capacidade=1 custo_ms=100 fila_max=100
+1794517101.460,politica_trocada,"{""versao"": 2, ""projeto"": ""origem"", ""limite_por_minuto"": null}"
+1794517121.460,politica_trocada,"{""versao"": 3, ""projeto"": ""origem"", ""limite_por_minuto"": 100}"
+1794517181.460,protecao_ligada,capacidade=1

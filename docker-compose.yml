@@ -1,0 +1,75 @@
+# Miniatura do incidente do Google Cloud (12/06/2025): política com campo em
+# branco derruba as réplicas do Service Control, e o reinício sem backoff gera
+# um efeito manada sobre o banco de políticas.
+#
+# Rode com `python rodar.py --cenario ...` (ver README): o script define as
+# variáveis abaixo, separa os logs por execução e chama a análise.
+
+services:
+  politicas:
+    build: .
+    command: ["python", "politicas.py"]
+    init: true
+    environment:
+      PASTA_LOGS: /logs
+      CAPACIDADE: ${CAPACIDADE:-1}
+      CUSTO_MS: ${CUSTO_MS:-100}
+      FILA_MAX: ${FILA_MAX:-100}
+    networks: [rede_dados]
+    volumes:
+      - ./logs/${EXECUCAO:-avulsa}:/logs
+
+  controle:
+    build: .
+    command: ["python", "supervisor.py"]
+    init: true
+    stop_grace_period: 2s
+    depends_on: [politicas]
+    environment:
+      PASTA_LOGS: /logs
+      POLITICAS_URL: http://politicas:8000
+      BACKOFF: ${BACKOFF:-sem_backoff}
+      VALIDAR: ${VALIDAR:-0}
+      TIMEOUT_S: ${TIMEOUT_S:-1.0}
+      RECARGA_S: ${RECARGA_S:-5}
+    deploy:
+      replicas: ${REPLICAS:-30}
+    networks: [rede_clientes, rede_dados]
+    volumes:
+      - ./logs/${EXECUCAO:-avulsa}:/logs
+
+  cliente:
+    build: .
+    command: ["python", "cliente.py"]
+    init: true
+    depends_on: [controle]
+    environment:
+      PASTA_LOGS: /logs
+      CONTROLE_HOST: controle
+      DURACAO_S: ${DURACAO_S:-150}
+      TIMEOUT_S: ${TIMEOUT_S:-1.0}
+    networks: [rede_clientes]
+    volumes:
+      - ./logs/${EXECUCAO:-avulsa}:/logs
+
+  injetor:
+    build: .
+    command: ["python", "injetor.py"]
+    init: true
+    depends_on: [politicas]
+    environment:
+      PASTA_LOGS: /logs
+      POLITICAS_URL: http://politicas:8000
+      AQUECIMENTO_S: ${AQUECIMENTO_S:-30}
+      INCIDENTE_S: ${INCIDENTE_S:-20}
+      INTERVENCAO_APOS_S: ${INTERVENCAO_APOS_S:-60}
+      DURACAO_S: ${DURACAO_S:-150}
+    networks: [rede_dados]
+    volumes:
+      - ./logs/${EXECUCAO:-avulsa}:/logs
+
+networks:
+  # cliente <-> controle (o tráfego dos usuários)
+  rede_clientes:
+  # controle <-> politicas e injetor -> politicas (o "plano de controle")
+  rede_dados:
