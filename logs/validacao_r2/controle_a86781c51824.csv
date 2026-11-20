@@ -1,0 +1,12 @@
+ts,replica,pid,evento,detalhe
+1795171685.474,a86781c51824,7,supervisor_aguardando,7.94
+1795171695.743,a86781c51824,8,processo_iniciado,backoff=sem_backoff validar=1
+1795171695.924,a86781c51824,8,politica_carregada,versao=1 tentativas=1
+1795171752.106,a86781c51824,8,politica_recusada,versao=2
+1795171757.220,a86781c51824,8,politica_recusada,versao=2
+1795171762.336,a86781c51824,8,politica_recusada,versao=2
+1795171767.458,a86781c51824,8,politica_recusada,versao=2
+1795171772.561,a86781c51824,8,politica_atualizada,versao=3
+1795171838.874,a86781c51824,8,recarga_falhou,HTTPError
+1795171864.321,a86781c51824,8,recarga_falhou,HTTPError
+1795171869.349,a86781c51824,8,recarga_falhou,HTTPError

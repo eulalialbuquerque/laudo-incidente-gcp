@@ -1,0 +1,21 @@
+ts,replica,pid,evento,detalhe
+1795171400.103,e2b67bda379e,8,supervisor_aguardando,1.00
+1795171404.471,e2b67bda379e,9,processo_iniciado,backoff=jitter validar=0
+1795171404.696,e2b67bda379e,9,politica_carregada,versao=1 tentativas=1
+1795171494.653,e2b67bda379e,9,crash,"TypeError(""int() argument must be a string, a bytes-like object or a real number, not 'NoneType'"")"
+1795171497.433,e2b67bda379e,8,processo_encerrado,codigo=1 duracao_s=96.71
+1795171497.547,e2b67bda379e,8,supervisor_aguardando,0.24
+1795171502.589,e2b67bda379e,100,processo_iniciado,backoff=jitter validar=0
+1795171504.206,e2b67bda379e,100,carga_falhou,TimeoutError apos 1550 ms; nova tentativa em 0.24 s
+1795171505.467,e2b67bda379e,100,carga_falhou,TimeoutError apos 1014 ms; nova tentativa em 0.97 s
+1795171507.449,e2b67bda379e,100,carga_falhou,TimeoutError apos 1004 ms; nova tentativa em 0.59 s
+1795171509.066,e2b67bda379e,100,carga_falhou,TimeoutError apos 1020 ms; nova tentativa em 2.49 s
+1795171512.544,e2b67bda379e,100,carga_falhou,TimeoutError apos 1003 ms; nova tentativa em 7.14 s
+1795171520.249,e2b67bda379e,100,politica_carregada,versao=3 tentativas=6
+1795171572.643,e2b67bda379e,100,recarga_falhou,HTTPError
+1795171577.653,e2b67bda379e,100,recarga_falhou,HTTPError
+1795171587.764,e2b67bda379e,100,recarga_falhou,HTTPError
+1795171592.770,e2b67bda379e,100,recarga_falhou,HTTPError
+1795171597.773,e2b67bda379e,100,recarga_falhou,HTTPError
+1795171607.878,e2b67bda379e,100,recarga_falhou,HTTPError
+1795171612.884,e2b67bda379e,100,recarga_falhou,HTTPError

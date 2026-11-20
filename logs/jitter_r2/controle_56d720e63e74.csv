@@ -1,0 +1,20 @@
+ts,replica,pid,evento,detalhe
+1795171441.271,56d720e63e74,7,supervisor_aguardando,2.72
+1795171445.256,56d720e63e74,8,processo_iniciado,backoff=jitter validar=0
+1795171445.547,56d720e63e74,8,politica_carregada,versao=1 tentativas=1
+1795171492.402,56d720e63e74,8,crash,"TypeError(""int() argument must be a string, a bytes-like object or a real number, not 'NoneType'"")"
+1795171492.784,56d720e63e74,7,processo_encerrado,codigo=1 duracao_s=49.16
+1795171492.793,56d720e63e74,7,supervisor_aguardando,0.48
+1795171493.856,56d720e63e74,94,processo_iniciado,backoff=jitter validar=0
+1795171494.321,56d720e63e74,94,crash,"TypeError(""int() argument must be a string, a bytes-like object or a real number, not 'NoneType'"")"
+1795171494.397,56d720e63e74,7,processo_encerrado,codigo=1 duracao_s=1.12
+1795171494.399,56d720e63e74,7,supervisor_aguardando,0.32
+1795171495.605,56d720e63e74,98,processo_iniciado,backoff=jitter validar=0
+1795171496.809,56d720e63e74,98,carga_falhou,TimeoutError apos 1121 ms; nova tentativa em 0.14 s
+1795171497.976,56d720e63e74,98,carga_falhou,TimeoutError apos 1008 ms; nova tentativa em 0.95 s
+1795171499.976,56d720e63e74,98,carga_falhou,TimeoutError apos 1048 ms; nova tentativa em 0.69 s
+1795171501.945,56d720e63e74,98,carga_falhou,TimeoutError apos 1058 ms; nova tentativa em 2.42 s
+1795171505.624,56d720e63e74,98,carga_falhou,TimeoutError apos 1004 ms; nova tentativa em 5.75 s
+1795171512.463,56d720e63e74,98,carga_falhou,TimeoutError apos 1102 ms; nova tentativa em 2.38 s
+1795171515.878,56d720e63e74,98,carga_falhou,TimeoutError apos 1005 ms; nova tentativa em 4.30 s
+1795171520.452,56d720e63e74,98,politica_carregada,versao=3 tentativas=8

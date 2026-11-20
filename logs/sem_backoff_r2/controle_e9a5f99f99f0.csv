@@ -1,0 +1,179 @@
+ts,replica,pid,evento,detalhe
+1795171138.289,e9a5f99f99f0,7,supervisor_aguardando,0.79
+1795171140.788,e9a5f99f99f0,8,processo_iniciado,backoff=sem_backoff validar=0
+1795171141.110,e9a5f99f99f0,8,politica_carregada,versao=1 tentativas=1
+1795171193.261,e9a5f99f99f0,8,recarga_falhou,TimeoutError
+1795171202.472,e9a5f99f99f0,8,crash,"TypeError(""int() argument must be a string, a bytes-like object or a real number, not 'NoneType'"")"
+1795171204.133,e9a5f99f99f0,7,processo_encerrado,codigo=1 duracao_s=65.07
+1795171204.139,e9a5f99f99f0,7,supervisor_aguardando,1.00
+1795171205.853,e9a5f99f99f0,89,processo_iniciado,backoff=sem_backoff validar=0
+1795171206.886,e9a5f99f99f0,89,carga_falhou,TimeoutError apos 1033 ms; nova tentativa em 0.10 s
+1795171207.991,e9a5f99f99f0,89,carga_falhou,TimeoutError apos 1003 ms; nova tentativa em 0.10 s
+1795171209.094,e9a5f99f99f0,89,carga_falhou,TimeoutError apos 1003 ms; nova tentativa em 0.10 s
+1795171210.181,e9a5f99f99f0,89,carga_falhou,TimeoutError apos 1003 ms; nova tentativa em 0.10 s
+1795171210.284,e9a5f99f99f0,89,carga_falhou,HTTPError apos 2 ms; nova tentativa em 0.10 s
+1795171211.386,e9a5f99f99f0,89,carga_falhou,TimeoutError apos 1002 ms; nova tentativa em 0.10 s
+1795171211.491,e9a5f99f99f0,89,carga_falhou,HTTPError apos 4 ms; nova tentativa em 0.10 s
+1795171211.594,e9a5f99f99f0,89,carga_falhou,HTTPError apos 2 ms; nova tentativa em 0.10 s
+1795171211.735,e9a5f99f99f0,89,carga_falhou,HTTPError apos 40 ms; nova tentativa em 0.10 s
+1795171211.840,e9a5f99f99f0,89,carga_falhou,HTTPError apos 4 ms; nova tentativa em 0.10 s
+1795171211.946,e9a5f99f99f0,89,carga_falhou,HTTPError apos 5 ms; nova tentativa em 0.10 s
+1795171212.051,e9a5f99f99f0,89,carga_falhou,HTTPError apos 4 ms; nova tentativa em 0.10 s
+1795171212.155,e9a5f99f99f0,89,carga_falhou,HTTPError apos 4 ms; nova tentativa em 0.10 s
+1795171213.259,e9a5f99f99f0,89,carga_falhou,TimeoutError apos 1003 ms; nova tentativa em 0.10 s
+1795171213.365,e9a5f99f99f0,89,carga_falhou,HTTPError apos 5 ms; nova tentativa em 0.10 s
+1795171213.471,e9a5f99f99f0,89,carga_falhou,HTTPError apos 5 ms; nova tentativa em 0.10 s
+1795171213.584,e9a5f99f99f0,89,carga_falhou,HTTPError apos 7 ms; nova tentativa em 0.10 s
+1795171213.696,e9a5f99f99f0,89,carga_falhou,HTTPError apos 11 ms; nova tentativa em 0.10 s
+1795171213.805,e9a5f99f99f0,89,carga_falhou,HTTPError apos 7 ms; nova tentativa em 0.10 s
+1795171213.911,e9a5f99f99f0,89,carga_falhou,HTTPError apos 4 ms; nova tentativa em 0.10 s
+1795171214.016,e9a5f99f99f0,89,carga_falhou,HTTPError apos 4 ms; nova tentativa em 0.10 s
+1795171214.121,e9a5f99f99f0,89,carga_falhou,HTTPError apos 4 ms; nova tentativa em 0.10 s
+1795171214.227,e9a5f99f99f0,89,carga_falhou,HTTPError apos 4 ms; nova tentativa em 0.10 s
+1795171214.332,e9a5f99f99f0,89,carga_falhou,HTTPError apos 4 ms; nova tentativa em 0.10 s
+1795171214.437,e9a5f99f99f0,89,carga_falhou,HTTPError apos 4 ms; nova tentativa em 0.10 s
+1795171214.542,e9a5f99f99f0,89,carga_falhou,HTTPError apos 5 ms; nova tentativa em 0.10 s
+1795171214.647,e9a5f99f99f0,89,carga_falhou,HTTPError apos 3 ms; nova tentativa em 0.10 s
+1795171214.753,e9a5f99f99f0,89,carga_falhou,HTTPError apos 5 ms; nova tentativa em 0.10 s
+1795171215.857,e9a5f99f99f0,89,carga_falhou,TimeoutError apos 1003 ms; nova tentativa em 0.10 s
+1795171216.961,e9a5f99f99f0,89,carga_falhou,TimeoutError apos 1004 ms; nova tentativa em 0.10 s
+1795171217.065,e9a5f99f99f0,89,carga_falhou,HTTPError apos 3 ms; nova tentativa em 0.10 s
+1795171217.171,e9a5f99f99f0,89,carga_falhou,HTTPError apos 5 ms; nova tentativa em 0.10 s
+1795171217.275,e9a5f99f99f0,89,carga_falhou,HTTPError apos 3 ms; nova tentativa em 0.10 s
+1795171218.378,e9a5f99f99f0,89,carga_falhou,TimeoutError apos 1002 ms; nova tentativa em 0.10 s
+1795171218.482,e9a5f99f99f0,89,carga_falhou,HTTPError apos 3 ms; nova tentativa em 0.10 s
+1795171218.587,e9a5f99f99f0,89,carga_falhou,HTTPError apos 4 ms; nova tentativa em 0.10 s
+1795171218.691,e9a5f99f99f0,89,carga_falhou,HTTPError apos 3 ms; nova tentativa em 0.10 s
+1795171218.795,e9a5f99f99f0,89,carga_falhou,HTTPError apos 3 ms; nova tentativa em 0.10 s
+1795171218.899,e9a5f99f99f0,89,carga_falhou,HTTPError apos 3 ms; nova tentativa em 0.10 s
+1795171219.017,e9a5f99f99f0,89,carga_falhou,HTTPError apos 17 ms; nova tentativa em 0.10 s
+1795171219.126,e9a5f99f99f0,89,carga_falhou,HTTPError apos 3 ms; nova tentativa em 0.10 s
+1795171219.231,e9a5f99f99f0,89,carga_falhou,HTTPError apos 3 ms; nova tentativa em 0.10 s
+1795171219.336,e9a5f99f99f0,89,carga_falhou,HTTPError apos 5 ms; nova tentativa em 0.10 s
+1795171219.445,e9a5f99f99f0,89,carga_falhou,HTTPError apos 6 ms; nova tentativa em 0.10 s
+1795171219.549,e9a5f99f99f0,89,carga_falhou,HTTPError apos 3 ms; nova tentativa em 0.10 s
+1795171219.654,e9a5f99f99f0,89,carga_falhou,HTTPError apos 3 ms; nova tentativa em 0.10 s
+1795171219.758,e9a5f99f99f0,89,carga_falhou,HTTPError apos 4 ms; nova tentativa em 0.10 s
+1795171219.863,e9a5f99f99f0,89,carga_falhou,HTTPError apos 3 ms; nova tentativa em 0.10 s
+1795171219.967,e9a5f99f99f0,89,carga_falhou,HTTPError apos 3 ms; nova tentativa em 0.10 s
+1795171220.072,e9a5f99f99f0,89,carga_falhou,HTTPError apos 4 ms; nova tentativa em 0.10 s
+1795171220.176,e9a5f99f99f0,89,carga_falhou,HTTPError apos 4 ms; nova tentativa em 0.10 s
+1795171220.282,e9a5f99f99f0,89,carga_falhou,HTTPError apos 5 ms; nova tentativa em 0.10 s
+1795171220.387,e9a5f99f99f0,89,carga_falhou,HTTPError apos 3 ms; nova tentativa em 0.10 s
+1795171220.491,e9a5f99f99f0,89,carga_falhou,HTTPError apos 3 ms; nova tentativa em 0.10 s
+1795171220.595,e9a5f99f99f0,89,carga_falhou,HTTPError apos 3 ms; nova tentativa em 0.10 s
+1795171220.699,e9a5f99f99f0,89,carga_falhou,HTTPError apos 3 ms; nova tentativa em 0.10 s
+1795171220.805,e9a5f99f99f0,89,carga_falhou,HTTPError apos 5 ms; nova tentativa em 0.10 s
+1795171220.910,e9a5f99f99f0,89,carga_falhou,HTTPError apos 4 ms; nova tentativa em 0.10 s
+1795171222.014,e9a5f99f99f0,89,carga_falhou,TimeoutError apos 1002 ms; nova tentativa em 0.10 s
+1795171223.124,e9a5f99f99f0,89,carga_falhou,TimeoutError apos 1009 ms; nova tentativa em 0.10 s
+1795171223.292,e9a5f99f99f0,89,carga_falhou,HTTPError apos 64 ms; nova tentativa em 0.10 s
+1795171223.402,e9a5f99f99f0,89,carga_falhou,HTTPError apos 9 ms; nova tentativa em 0.10 s
+1795171223.516,e9a5f99f99f0,89,carga_falhou,HTTPError apos 14 ms; nova tentativa em 0.10 s
+1795171223.622,e9a5f99f99f0,89,carga_falhou,HTTPError apos 4 ms; nova tentativa em 0.10 s
+1795171223.728,e9a5f99f99f0,89,carga_falhou,HTTPError apos 4 ms; nova tentativa em 0.10 s
+1795171223.834,e9a5f99f99f0,89,carga_falhou,HTTPError apos 5 ms; nova tentativa em 0.10 s
+1795171223.946,e9a5f99f99f0,89,carga_falhou,HTTPError apos 10 ms; nova tentativa em 0.10 s
+1795171224.050,e9a5f99f99f0,89,carga_falhou,HTTPError apos 3 ms; nova tentativa em 0.10 s
+1795171224.159,e9a5f99f99f0,89,carga_falhou,HTTPError apos 8 ms; nova tentativa em 0.10 s
+1795171224.264,e9a5f99f99f0,89,carga_falhou,HTTPError apos 4 ms; nova tentativa em 0.10 s
+1795171224.370,e9a5f99f99f0,89,carga_falhou,HTTPError apos 5 ms; nova tentativa em 0.10 s
+1795171224.474,e9a5f99f99f0,89,carga_falhou,HTTPError apos 4 ms; nova tentativa em 0.10 s
+1795171224.583,e9a5f99f99f0,89,carga_falhou,HTTPError apos 8 ms; nova tentativa em 0.10 s
+1795171224.690,e9a5f99f99f0,89,carga_falhou,HTTPError apos 6 ms; nova tentativa em 0.10 s
+1795171224.794,e9a5f99f99f0,89,carga_falhou,HTTPError apos 4 ms; nova tentativa em 0.10 s
+1795171224.900,e9a5f99f99f0,89,carga_falhou,HTTPError apos 5 ms; nova tentativa em 0.10 s
+1795171225.007,e9a5f99f99f0,89,carga_falhou,HTTPError apos 6 ms; nova tentativa em 0.10 s
+1795171225.111,e9a5f99f99f0,89,carga_falhou,HTTPError apos 3 ms; nova tentativa em 0.10 s
+1795171225.216,e9a5f99f99f0,89,carga_falhou,HTTPError apos 4 ms; nova tentativa em 0.10 s
+1795171225.321,e9a5f99f99f0,89,carga_falhou,HTTPError apos 4 ms; nova tentativa em 0.10 s
+1795171225.427,e9a5f99f99f0,89,carga_falhou,HTTPError apos 5 ms; nova tentativa em 0.10 s
+1795171225.541,e9a5f99f99f0,89,carga_falhou,HTTPError apos 12 ms; nova tentativa em 0.10 s
+1795171225.649,e9a5f99f99f0,89,carga_falhou,HTTPError apos 4 ms; nova tentativa em 0.10 s
+1795171226.754,e9a5f99f99f0,89,carga_falhou,TimeoutError apos 1004 ms; nova tentativa em 0.10 s
+1795171226.858,e9a5f99f99f0,89,carga_falhou,HTTPError apos 3 ms; nova tentativa em 0.10 s
+1795171226.963,e9a5f99f99f0,89,carga_falhou,HTTPError apos 4 ms; nova tentativa em 0.10 s
+1795171228.066,e9a5f99f99f0,89,carga_falhou,TimeoutError apos 1003 ms; nova tentativa em 0.10 s
+1795171228.170,e9a5f99f99f0,89,carga_falhou,HTTPError apos 3 ms; nova tentativa em 0.10 s
+1795171228.281,e9a5f99f99f0,89,carga_falhou,HTTPError apos 11 ms; nova tentativa em 0.10 s
+1795171229.386,e9a5f99f99f0,89,carga_falhou,TimeoutError apos 1003 ms; nova tentativa em 0.10 s
+1795171229.490,e9a5f99f99f0,89,carga_falhou,HTTPError apos 3 ms; nova tentativa em 0.10 s
+1795171230.595,e9a5f99f99f0,89,carga_falhou,TimeoutError apos 1003 ms; nova tentativa em 0.10 s
+1795171230.755,e9a5f99f99f0,89,carga_falhou,HTTPError apos 57 ms; nova tentativa em 0.10 s
+1795171230.861,e9a5f99f99f0,89,carga_falhou,HTTPError apos 5 ms; nova tentativa em 0.10 s
+1795171230.966,e9a5f99f99f0,89,carga_falhou,HTTPError apos 5 ms; nova tentativa em 0.10 s
+1795171231.072,e9a5f99f99f0,89,carga_falhou,HTTPError apos 4 ms; nova tentativa em 0.10 s
+1795171231.177,e9a5f99f99f0,89,carga_falhou,HTTPError apos 4 ms; nova tentativa em 0.10 s
+1795171231.280,e9a5f99f99f0,89,carga_falhou,HTTPError apos 3 ms; nova tentativa em 0.10 s
+1795171231.384,e9a5f99f99f0,89,carga_falhou,HTTPError apos 3 ms; nova tentativa em 0.10 s
+1795171231.488,e9a5f99f99f0,89,carga_falhou,HTTPError apos 3 ms; nova tentativa em 0.10 s
+1795171231.590,e9a5f99f99f0,89,carga_falhou,HTTPError apos 2 ms; nova tentativa em 0.10 s
+1795171231.694,e9a5f99f99f0,89,carga_falhou,HTTPError apos 3 ms; nova tentativa em 0.10 s
+1795171231.799,e9a5f99f99f0,89,carga_falhou,HTTPError apos 3 ms; nova tentativa em 0.10 s
+1795171231.903,e9a5f99f99f0,89,carga_falhou,HTTPError apos 3 ms; nova tentativa em 0.10 s
+1795171232.005,e9a5f99f99f0,89,carga_falhou,HTTPError apos 2 ms; nova tentativa em 0.10 s
+1795171232.109,e9a5f99f99f0,89,carga_falhou,HTTPError apos 3 ms; nova tentativa em 0.10 s
+1795171232.214,e9a5f99f99f0,89,carga_falhou,HTTPError apos 4 ms; nova tentativa em 0.10 s
+1795171233.317,e9a5f99f99f0,89,carga_falhou,TimeoutError apos 1003 ms; nova tentativa em 0.10 s
+1795171233.421,e9a5f99f99f0,89,carga_falhou,HTTPError apos 3 ms; nova tentativa em 0.10 s
+1795171234.525,e9a5f99f99f0,89,carga_falhou,TimeoutError apos 1003 ms; nova tentativa em 0.10 s
+1795171235.629,e9a5f99f99f0,89,carga_falhou,TimeoutError apos 1002 ms; nova tentativa em 0.10 s
+1795171235.733,e9a5f99f99f0,89,carga_falhou,HTTPError apos 3 ms; nova tentativa em 0.10 s
+1795171235.836,e9a5f99f99f0,89,carga_falhou,HTTPError apos 3 ms; nova tentativa em 0.10 s
+1795171235.940,e9a5f99f99f0,89,carga_falhou,HTTPError apos 3 ms; nova tentativa em 0.10 s
+1795171237.043,e9a5f99f99f0,89,carga_falhou,TimeoutError apos 1002 ms; nova tentativa em 0.10 s
+1795171237.149,e9a5f99f99f0,89,carga_falhou,HTTPError apos 5 ms; nova tentativa em 0.10 s
+1795171237.269,e9a5f99f99f0,89,carga_falhou,HTTPError apos 18 ms; nova tentativa em 0.10 s
+1795171237.379,e9a5f99f99f0,89,carga_falhou,HTTPError apos 7 ms; nova tentativa em 0.10 s
+1795171237.534,e9a5f99f99f0,89,carga_falhou,HTTPError apos 52 ms; nova tentativa em 0.10 s
+1795171238.447,e9a5f99f99f0,89,carga_falhou,HTTPError apos 644 ms; nova tentativa em 0.10 s
+1795171238.558,e9a5f99f99f0,89,carga_falhou,HTTPError apos 10 ms; nova tentativa em 0.10 s
+1795171238.664,e9a5f99f99f0,89,carga_falhou,HTTPError apos 5 ms; nova tentativa em 0.10 s
+1795171238.770,e9a5f99f99f0,89,carga_falhou,HTTPError apos 4 ms; nova tentativa em 0.10 s
+1795171238.874,e9a5f99f99f0,89,carga_falhou,HTTPError apos 3 ms; nova tentativa em 0.10 s
+1795171238.978,e9a5f99f99f0,89,carga_falhou,HTTPError apos 3 ms; nova tentativa em 0.10 s
+1795171239.082,e9a5f99f99f0,89,carga_falhou,HTTPError apos 3 ms; nova tentativa em 0.10 s
+1795171239.185,e9a5f99f99f0,89,carga_falhou,HTTPError apos 3 ms; nova tentativa em 0.10 s
+1795171239.289,e9a5f99f99f0,89,carga_falhou,HTTPError apos 3 ms; nova tentativa em 0.10 s
+1795171240.382,e9a5f99f99f0,89,carga_falhou,TimeoutError apos 1002 ms; nova tentativa em 0.10 s
+1795171240.487,e9a5f99f99f0,89,carga_falhou,HTTPError apos 4 ms; nova tentativa em 0.10 s
+1795171240.594,e9a5f99f99f0,89,carga_falhou,HTTPError apos 6 ms; nova tentativa em 0.10 s
+1795171240.699,e9a5f99f99f0,89,carga_falhou,HTTPError apos 4 ms; nova tentativa em 0.10 s
+1795171240.805,e9a5f99f99f0,89,carga_falhou,HTTPError apos 4 ms; nova tentativa em 0.10 s
+1795171240.911,e9a5f99f99f0,89,carga_falhou,HTTPError apos 4 ms; nova tentativa em 0.10 s
+1795171241.015,e9a5f99f99f0,89,carga_falhou,HTTPError apos 3 ms; nova tentativa em 0.10 s
+1795171241.120,e9a5f99f99f0,89,carga_falhou,HTTPError apos 4 ms; nova tentativa em 0.10 s
+1795171241.224,e9a5f99f99f0,89,carga_falhou,HTTPError apos 4 ms; nova tentativa em 0.10 s
+1795171241.329,e9a5f99f99f0,89,carga_falhou,HTTPError apos 4 ms; nova tentativa em 0.10 s
+1795171241.433,e9a5f99f99f0,89,carga_falhou,HTTPError apos 4 ms; nova tentativa em 0.10 s
+1795171241.537,e9a5f99f99f0,89,carga_falhou,HTTPError apos 3 ms; nova tentativa em 0.10 s
+1795171241.642,e9a5f99f99f0,89,carga_falhou,HTTPError apos 4 ms; nova tentativa em 0.10 s
+1795171241.746,e9a5f99f99f0,89,carga_falhou,HTTPError apos 3 ms; nova tentativa em 0.10 s
+1795171241.850,e9a5f99f99f0,89,carga_falhou,HTTPError apos 3 ms; nova tentativa em 0.10 s
+1795171241.955,e9a5f99f99f0,89,carga_falhou,HTTPError apos 4 ms; nova tentativa em 0.10 s
+1795171243.059,e9a5f99f99f0,89,carga_falhou,TimeoutError apos 1003 ms; nova tentativa em 0.10 s
+1795171244.164,e9a5f99f99f0,89,carga_falhou,TimeoutError apos 1004 ms; nova tentativa em 0.10 s
+1795171244.270,e9a5f99f99f0,89,carga_falhou,HTTPError apos 5 ms; nova tentativa em 0.10 s
+1795171244.375,e9a5f99f99f0,89,carga_falhou,HTTPError apos 4 ms; nova tentativa em 0.10 s
+1795171245.479,e9a5f99f99f0,89,carga_falhou,TimeoutError apos 1003 ms; nova tentativa em 0.10 s
+1795171245.589,e9a5f99f99f0,89,carga_falhou,HTTPError apos 9 ms; nova tentativa em 0.10 s
+1795171245.693,e9a5f99f99f0,89,carga_falhou,HTTPError apos 4 ms; nova tentativa em 0.10 s
+1795171246.803,e9a5f99f99f0,89,carga_falhou,TimeoutError apos 1008 ms; nova tentativa em 0.10 s
+1795171246.907,e9a5f99f99f0,89,carga_falhou,HTTPError apos 3 ms; nova tentativa em 0.10 s
+1795171248.010,e9a5f99f99f0,89,carga_falhou,TimeoutError apos 1003 ms; nova tentativa em 0.10 s
+1795171249.114,e9a5f99f99f0,89,carga_falhou,TimeoutError apos 1003 ms; nova tentativa em 0.10 s
+1795171250.217,e9a5f99f99f0,89,carga_falhou,TimeoutError apos 1003 ms; nova tentativa em 0.10 s
+1795171250.321,e9a5f99f99f0,89,carga_falhou,HTTPError apos 3 ms; nova tentativa em 0.10 s
+1795171250.425,e9a5f99f99f0,89,carga_falhou,HTTPError apos 4 ms; nova tentativa em 0.10 s
+1795171251.528,e9a5f99f99f0,89,carga_falhou,TimeoutError apos 1002 ms; nova tentativa em 0.10 s
+1795171251.734,e9a5f99f99f0,89,politica_carregada,versao=3 tentativas=160
+1795171256.739,e9a5f99f99f0,89,recarga_falhou,HTTPError
+1795171261.742,e9a5f99f99f0,89,recarga_falhou,HTTPError
+1795171266.938,e9a5f99f99f0,89,recarga_falhou,HTTPError
+1795171271.942,e9a5f99f99f0,89,recarga_falhou,HTTPError
+1795171276.950,e9a5f99f99f0,89,recarga_falhou,HTTPError
+1795171294.721,e9a5f99f99f0,89,recarga_falhou,TimeoutError
+1795171299.739,e9a5f99f99f0,89,recarga_falhou,HTTPError
+1795171304.735,e9a5f99f99f0,89,recarga_falhou,HTTPError
+1795171311.303,e9a5f99f99f0,89,recarga_falhou,HTTPError
+1795171322.022,e9a5f99f99f0,89,recarga_falhou,HTTPError

@@ -1,0 +1,6 @@
+ts,evento,detalhe
+1795171460.568,inicio,aquecimento_s=30.0 incidente_s=20.0 intervencao_apos_s=60.0 duracao_s=150.0
+1795171490.539,politica_em_branco,"{""versao"": 2, ""projeto"": ""origem"", ""limite_por_minuto"": null}"
+1795171510.757,botao_vermelho,"{""versao"": 3, ""projeto"": ""origem"", ""limite_por_minuto"": 100}"
+1795171570.537,intervencao_manual,protecao ligada no banco de politicas
+1795171610.470,fim,

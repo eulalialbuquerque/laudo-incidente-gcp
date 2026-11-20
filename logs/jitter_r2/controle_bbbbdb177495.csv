@@ -1,0 +1,31 @@
+ts,replica,pid,evento,detalhe
+1795171451.227,bbbbdb177495,7,supervisor_aguardando,2.60
+1795171455.138,bbbbdb177495,8,processo_iniciado,backoff=jitter validar=0
+1795171455.382,bbbbdb177495,8,politica_carregada,versao=1 tentativas=1
+1795171491.998,bbbbdb177495,8,crash,"TypeError(""int() argument must be a string, a bytes-like object or a real number, not 'NoneType'"")"
+1795171492.330,bbbbdb177495,7,processo_encerrado,codigo=1 duracao_s=38.53
+1795171492.339,bbbbdb177495,7,supervisor_aguardando,0.35
+1795171493.112,bbbbdb177495,88,processo_iniciado,backoff=jitter validar=0
+1795171493.512,bbbbdb177495,88,crash,"TypeError(""int() argument must be a string, a bytes-like object or a real number, not 'NoneType'"")"
+1795171493.615,bbbbdb177495,7,processo_encerrado,codigo=1 duracao_s=0.92
+1795171493.624,bbbbdb177495,7,supervisor_aguardando,0.90
+1795171495.303,bbbbdb177495,91,processo_iniciado,backoff=jitter validar=0
+1795171496.444,bbbbdb177495,91,carga_falhou,TimeoutError apos 1130 ms; nova tentativa em 0.09 s
+1795171497.582,bbbbdb177495,91,carga_falhou,TimeoutError apos 1003 ms; nova tentativa em 0.93 s
+1795171499.559,bbbbdb177495,91,carga_falhou,TimeoutError apos 1041 ms; nova tentativa em 0.30 s
+1795171501.022,bbbbdb177495,91,carga_falhou,TimeoutError apos 1092 ms; nova tentativa em 1.56 s
+1795171503.462,bbbbdb177495,91,crash,"TypeError(""int() argument must be a string, a bytes-like object or a real number, not 'NoneType'"")"
+1795171504.388,bbbbdb177495,7,processo_encerrado,codigo=1 duracao_s=9.85
+1795171504.399,bbbbdb177495,7,supervisor_aguardando,0.06
+1795171504.852,bbbbdb177495,102,processo_iniciado,backoff=jitter validar=0
+1795171505.911,bbbbdb177495,102,carga_falhou,TimeoutError apos 1058 ms; nova tentativa em 0.15 s
+1795171507.062,bbbbdb177495,102,carga_falhou,TimeoutError apos 1003 ms; nova tentativa em 0.37 s
+1795171508.434,bbbbdb177495,102,carga_falhou,TimeoutError apos 1004 ms; nova tentativa em 1.88 s
+1795171511.300,bbbbdb177495,102,carga_falhou,TimeoutError apos 1006 ms; nova tentativa em 3.63 s
+1795171516.246,bbbbdb177495,102,carga_falhou,TimeoutError apos 1017 ms; nova tentativa em 7.61 s
+1795171523.969,bbbbdb177495,102,politica_carregada,versao=3 tentativas=6
+1795171580.144,bbbbdb177495,102,recarga_falhou,HTTPError
+1795171585.181,bbbbdb177495,102,recarga_falhou,HTTPError
+1795171595.288,bbbbdb177495,102,recarga_falhou,HTTPError
+1795171600.294,bbbbdb177495,102,recarga_falhou,HTTPError
+1795171610.395,bbbbdb177495,102,recarga_falhou,HTTPError

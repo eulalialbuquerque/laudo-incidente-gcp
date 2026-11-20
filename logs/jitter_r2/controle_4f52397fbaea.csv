@@ -1,0 +1,12 @@
+ts,replica,pid,evento,detalhe
+1795171414.457,4f52397fbaea,7,supervisor_aguardando,2.07
+1795171422.343,4f52397fbaea,8,processo_iniciado,backoff=jitter validar=0
+1795171422.802,4f52397fbaea,8,politica_carregada,versao=1 tentativas=1
+1795171496.300,4f52397fbaea,8,recarga_falhou,TimeoutError
+1795171502.574,4f52397fbaea,8,recarga_falhou,TimeoutError
+1795171508.643,4f52397fbaea,8,recarga_falhou,TimeoutError
+1795171514.629,4f52397fbaea,8,recarga_falhou,TimeoutError
+1795171519.739,4f52397fbaea,8,politica_atualizada,versao=3
+1795171587.071,4f52397fbaea,8,recarga_falhou,HTTPError
+1795171597.179,4f52397fbaea,8,recarga_falhou,HTTPError
+1795171607.276,4f52397fbaea,8,recarga_falhou,HTTPError

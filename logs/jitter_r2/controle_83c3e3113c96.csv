@@ -1,0 +1,25 @@
+ts,replica,pid,evento,detalhe
+1795171443.229,83c3e3113c96,7,supervisor_aguardando,0.55
+1795171444.901,83c3e3113c96,8,processo_iniciado,backoff=jitter validar=0
+1795171445.080,83c3e3113c96,8,politica_carregada,versao=1 tentativas=1
+1795171491.189,83c3e3113c96,8,crash,"TypeError(""int() argument must be a string, a bytes-like object or a real number, not 'NoneType'"")"
+1795171491.464,83c3e3113c96,7,processo_encerrado,codigo=1 duracao_s=48.05
+1795171491.472,83c3e3113c96,7,supervisor_aguardando,0.23
+1795171492.032,83c3e3113c96,73,processo_iniciado,backoff=jitter validar=0
+1795171492.499,83c3e3113c96,73,crash,"TypeError(""int() argument must be a string, a bytes-like object or a real number, not 'NoneType'"")"
+1795171492.591,83c3e3113c96,7,processo_encerrado,codigo=1 duracao_s=0.88
+1795171492.592,83c3e3113c96,7,supervisor_aguardando,0.73
+1795171493.828,83c3e3113c96,77,processo_iniciado,backoff=jitter validar=0
+1795171494.104,83c3e3113c96,77,crash,"TypeError(""int() argument must be a string, a bytes-like object or a real number, not 'NoneType'"")"
+1795171494.233,83c3e3113c96,7,processo_encerrado,codigo=1 duracao_s=0.91
+1795171494.234,83c3e3113c96,7,supervisor_aguardando,1.32
+1795171496.309,83c3e3113c96,80,processo_iniciado,backoff=jitter validar=0
+1795171497.435,83c3e3113c96,80,carga_falhou,TimeoutError apos 1122 ms; nova tentativa em 0.43 s
+1795171498.865,83c3e3113c96,80,carga_falhou,TimeoutError apos 1003 ms; nova tentativa em 0.29 s
+1795171500.340,83c3e3113c96,80,carga_falhou,TimeoutError apos 1013 ms; nova tentativa em 1.72 s
+1795171504.368,83c3e3113c96,80,carga_falhou,TimeoutError apos 1042 ms; nova tentativa em 3.44 s
+1795171508.816,83c3e3113c96,80,carga_falhou,TimeoutError apos 1003 ms; nova tentativa em 1.70 s
+1795171511.506,83c3e3113c96,80,carga_falhou,TimeoutError apos 1004 ms; nova tentativa em 2.43 s
+1795171515.382,83c3e3113c96,80,carga_falhou,TimeoutError apos 1006 ms; nova tentativa em 7.83 s
+1795171523.339,83c3e3113c96,80,politica_carregada,versao=3 tentativas=8
+1795171590.283,83c3e3113c96,80,recarga_falhou,HTTPError

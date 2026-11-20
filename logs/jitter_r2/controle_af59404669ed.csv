@@ -1,0 +1,33 @@
+ts,replica,pid,evento,detalhe
+1795171397.841,af59404669ed,7,supervisor_aguardando,5.56
+1795171406.938,af59404669ed,8,processo_iniciado,backoff=jitter validar=0
+1795171407.112,af59404669ed,8,politica_carregada,versao=1 tentativas=1
+1795171492.329,af59404669ed,8,crash,"TypeError(""int() argument must be a string, a bytes-like object or a real number, not 'NoneType'"")"
+1795171493.024,af59404669ed,7,processo_encerrado,codigo=1 duracao_s=90.04
+1795171493.040,af59404669ed,7,supervisor_aguardando,0.19
+1795171494.165,af59404669ed,89,processo_iniciado,backoff=jitter validar=0
+1795171494.758,af59404669ed,89,crash,"TypeError(""int() argument must be a string, a bytes-like object or a real number, not 'NoneType'"")"
+1795171494.975,af59404669ed,7,processo_encerrado,codigo=1 duracao_s=1.74
+1795171495.003,af59404669ed,7,supervisor_aguardando,0.35
+1795171496.430,af59404669ed,91,processo_iniciado,backoff=jitter validar=0
+1795171497.545,af59404669ed,91,carga_falhou,TimeoutError apos 1110 ms; nova tentativa em 0.31 s
+1795171498.864,af59404669ed,91,carga_falhou,TimeoutError apos 1004 ms; nova tentativa em 0.03 s
+1795171500.144,af59404669ed,91,carga_falhou,TimeoutError apos 1070 ms; nova tentativa em 0.32 s
+1795171502.355,af59404669ed,91,crash,"TypeError(""int() argument must be a string, a bytes-like object or a real number, not 'NoneType'"")"
+1795171503.141,af59404669ed,7,processo_encerrado,codigo=1 duracao_s=7.73
+1795171503.209,af59404669ed,7,supervisor_aguardando,0.52
+1795171504.518,af59404669ed,97,processo_iniciado,backoff=jitter validar=0
+1795171505.596,af59404669ed,97,carga_falhou,TimeoutError apos 1077 ms; nova tentativa em 0.15 s
+1795171506.754,af59404669ed,97,carga_falhou,TimeoutError apos 1004 ms; nova tentativa em 0.02 s
+1795171507.779,af59404669ed,97,carga_falhou,TimeoutError apos 1003 ms; nova tentativa em 0.32 s
+1795171509.106,af59404669ed,97,carga_falhou,TimeoutError apos 1003 ms; nova tentativa em 1.90 s
+1795171511.995,af59404669ed,97,carga_falhou,TimeoutError apos 1004 ms; nova tentativa em 0.49 s
+1795171513.769,af59404669ed,97,carga_falhou,TimeoutError apos 1006 ms; nova tentativa em 3.59 s
+1795171518.361,af59404669ed,97,carga_falhou,TimeoutError apos 1004 ms; nova tentativa em 5.20 s
+1795171523.838,af59404669ed,97,politica_carregada,versao=3 tentativas=8
+1795171574.938,af59404669ed,97,recarga_falhou,HTTPError
+1795171580.052,af59404669ed,97,recarga_falhou,HTTPError
+1795171590.159,af59404669ed,97,recarga_falhou,HTTPError
+1795171600.268,af59404669ed,97,recarga_falhou,HTTPError
+1795171605.263,af59404669ed,97,recarga_falhou,HTTPError
+1795171610.272,af59404669ed,97,recarga_falhou,HTTPError
