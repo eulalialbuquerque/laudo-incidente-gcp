@@ -23,19 +23,22 @@ git clone <este repositório>
 cd <pasta do repositório>
 
 # 1) O incidente: reinício e nova tentativa sem backoff (~3 min)
-python rodar.py --cenario sem_backoff --rodada 1
+python rodar.py --cenario sem_backoff --rodada 3
 
 # 2) A mitigação: backoff exponencial com jitter (~3 min)
-python rodar.py --cenario jitter --rodada 1
+python rodar.py --cenario jitter --rodada 3
 
 # 3) Mitigação alternativa: validar a política antes de aplicar (~3 min)
-python rodar.py --cenario validacao --rodada 1
+python rodar.py --cenario validacao --rodada 3
 ```
+
+As rodadas 1 e 2 (as do laudo) já estão em `logs/`, por isso os comandos usam
+`--rodada 3`: o script recusa gravar numa pasta que já existe.
 
 Cada comando sobe a miniatura, executa o roteiro do incidente, guarda os logs
 em `logs/<cenario>_r<rodada>/`, derruba os containers e gera a análise. Ao
 final, `logs/comparacao.md` e `logs/comparacao.svg` comparam todas as execuções.
-Para repetir um cenário, use `--rodada 2`, `--rodada 3` etc. Com
+Para repetir um cenário, use `--rodada 4`, `--rodada 5` etc. Com
 `--replicas N`, o número de réplicas do controle muda (padrão 30).
 
 Para analisar de novo sem rodar: `python analisar.py logs/sem_backoff_r1` e
