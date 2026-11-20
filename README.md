@@ -43,14 +43,18 @@ Para analisar de novo sem rodar: `python analisar.py logs/sem_backoff_r1` e
 
 ## Roteiro de cada execução
 
-| t (s) | Evento | Quem faz |
-|---:|---|---|
-| 0 | Containers sobem; cada réplica do controle espera de 0 a 10 s (implantação gradual) e carrega a política | `controle` |
-| 30 | Política com `limite_por_minuto: null` gravada no banco de políticas | `injetor` |
-| 30 a 35 | As réplicas recarregam a política (a cada 5 s), quebram no `int(None)` e o supervisor as reinicia | `controle` |
-| 50 | "Botão vermelho": volta uma política válida | `injetor` |
-| 110 | Intervenção manual: o banco de políticas passa a recusar na hora o que passar da capacidade | `injetor` |
-| 150 | Fim | `cliente`, `injetor` |
+Duas referências de tempo: a primeira coluna conta desde a subida dos
+containers; a segunda conta desde a política em branco, que é o t = 0 usado
+pela análise, pelos `resumo.md` e pelo laudo.
+
+| Desde a subida (s) | Na análise e no laudo (s) | Evento | Quem faz |
+|---:|---:|---|---|
+| 0 | −30 | Containers sobem; cada réplica do controle espera de 0 a 10 s (implantação gradual) e carrega a política | `controle` |
+| 30 | 0 | Política com `limite_por_minuto: null` gravada no banco de políticas | `injetor` |
+| 30 a 35 | 0 a 5 | As réplicas recarregam a política (a cada 5 s), quebram no `int(None)` e o supervisor as reinicia | `controle` |
+| 50 | 20 | "Botão vermelho": volta uma política válida | `injetor` |
+| 110 | 80 | Intervenção manual: o banco de políticas passa a recusar na hora o que passar da capacidade | `injetor` |
+| 150 | 120 | Fim | `cliente`, `injetor` |
 
 ## Containers e redes
 
@@ -104,7 +108,7 @@ Em operação normal, a recarga a cada 5 s gera 6 leituras/s, abaixo da capacida
 | Replicação global do Spanner para todas as regiões em segundos | Um único banco, numa única máquina | Não medimos a propagação entre regiões; o "tempo até a falha" mede só o ciclo de recarga (5 s), não a replicação real |
 | Milhares de tarefas do Service Control e um Spanner com enorme capacidade | 30 réplicas e um banco de 10 leituras/s, escolhidos para que a demanda na volta (~27/s) passe da capacidade | O colapso é provocado pelos parâmetros: mostra o mecanismo, não prevê se ele ocorreria numa escala real. Os tempos em segundos não se comparam com as horas do incidente |
 | Orquestrador do Google reiniciando as tarefas (Borg) | Supervisor em Python dentro de cada container, com reinício em 1 s fixo | O comportamento de reinício foi controlado por nós; o `restart: always` do Docker, que já tem atraso crescente, ficou de fora |
-| Recuperação feita por engenheiros (reduzir a criação de tarefas, desviar tráfego) | Um único comando que liga a proteção no banco em t = 80 s | O tempo de recuperação sem backoff depende de quando programamos a intervenção; o que vale é ela ter sido necessária, não o número exato |
+| Recuperação feita por engenheiros (reduzir a criação de tarefas, desviar tráfego) | Um único comando que liga a proteção no banco em t = 80 s (contado desde a política em branco) | O tempo de recuperação sem backoff depende de quando programamos a intervenção; o que vale é ela ter sido necessária, não o número exato |
 | Todas as máquinas e redes separadas | Todos os containers dividem os mesmos núcleos do host | Parte da lentidão pode vir da disputa por CPU entre containers, não só da fila do banco |
 
 ## Cenários
@@ -116,6 +120,11 @@ Em operação normal, a recarga a cada 5 s gera 6 leituras/s, abaixo da capacida
 | `validacao` | 1 s fixo | 0,1 s fixo | é recusada; a réplica mantém a anterior |
 
 ## O que fica em `logs/<execucao>/`
+
+As rodadas `_r1` foram feitas em Linux e as `_r2` no Docker Desktop do Windows.
+A pasta `logs/invalidas_windows/` guarda três execuções descartadas, em que o
+cliente começou depois do incidente (ver `IA.md`, Erro 2). Elas ficam no
+repositório como evidência e não entram em `logs/comparacao.md`.
 
 | Arquivo | Conteúdo |
 |---|---|
@@ -147,9 +156,9 @@ Repositório do projeto: <https://github.com/elistenorio/fccpd-concorrencia-fila
 
 | Arquivo e trecho | Semelhança |
 |---|---|
-| `app/queue.py`, linha 20: `Retry(max=3, interval=[5, 15, 30])` | Novas tentativas em intervalos fixos, sem jitter: jobs que falham juntos tentam de novo juntos |
-| `app/queue.py`, linha 27, e `app/recomendacoes_cliente.py`, linha 20: `PAUSA_APOS_FALHA_SEGUNDOS = 15` | O disjuntor reabre ao mesmo tempo em todas as réplicas da api |
-| `docker-compose.yml`: `restart: always` e `worker` com `replicas: 3` | Réplicas que caem juntas voltam juntas contra o mesmo PostgreSQL |
+| `app/queue.py`, linha 20: `Retry(max=3, interval=[5, 15, 30])` | Novas tentativas com intervalos crescentes, mas predeterminados e sem jitter: jobs que falham juntos (por exemplo, com o PostgreSQL fora) tentam de novo juntos, exatamente 5, 15 e 30 s depois |
+| `app/queue.py`, linha 27, e `app/recomendacoes_cliente.py`, linha 20: `PAUSA_APOS_FALHA_SEGUNDOS = 15` | Pausa fixa de 15 s, sem jitter, no disjuntor. Hoje a `api` roda em um único processo, então o risco ainda é pequeno; se a `api` ganhar réplicas, todas que abriram o disjuntor na mesma falha voltam a tentar no mesmo instante |
+| `docker-compose.yml`: `restart: always` e `worker` com `replicas: 3` | Os 3 workers que caem juntos voltam juntos e retomam os jobs contra o mesmo PostgreSQL |
 | `app/database.py`, linhas 5 a 7: `create_engine(os.getenv("DATABASE_URL"))` | Configuração usada sem validação, como o campo em branco da política |
 
 ## Problemas comuns
