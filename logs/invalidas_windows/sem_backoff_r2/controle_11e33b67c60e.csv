@@ -1,0 +1,45 @@
+ts,replica,pid,evento,detalhe
+1795170161.977,11e33b67c60e,7,supervisor_aguardando,4.16
+1795170168.433,11e33b67c60e,8,processo_iniciado,backoff=sem_backoff validar=0
+1795170168.650,11e33b67c60e,8,crash,"TypeError(""int() argument must be a string, a bytes-like object or a real number, not 'NoneType'"")"
+1795170168.894,11e33b67c60e,7,processo_encerrado,codigo=1 duracao_s=2.74
+1795170168.901,11e33b67c60e,7,supervisor_aguardando,1.00
+1795170170.508,11e33b67c60e,10,processo_iniciado,backoff=sem_backoff validar=0
+1795170170.717,11e33b67c60e,10,crash,"TypeError(""int() argument must be a string, a bytes-like object or a real number, not 'NoneType'"")"
+1795170170.871,11e33b67c60e,7,processo_encerrado,codigo=1 duracao_s=0.97
+1795170170.883,11e33b67c60e,7,supervisor_aguardando,1.00
+1795170172.496,11e33b67c60e,12,processo_iniciado,backoff=sem_backoff validar=0
+1795170172.828,11e33b67c60e,12,crash,"TypeError(""int() argument must be a string, a bytes-like object or a real number, not 'NoneType'"")"
+1795170172.971,11e33b67c60e,7,processo_encerrado,codigo=1 duracao_s=1.08
+1795170172.973,11e33b67c60e,7,supervisor_aguardando,1.00
+1795170174.851,11e33b67c60e,14,processo_iniciado,backoff=sem_backoff validar=0
+1795170175.544,11e33b67c60e,14,crash,"TypeError(""int() argument must be a string, a bytes-like object or a real number, not 'NoneType'"")"
+1795170175.649,11e33b67c60e,7,processo_encerrado,codigo=1 duracao_s=1.66
+1795170175.665,11e33b67c60e,7,supervisor_aguardando,1.00
+1795170177.080,11e33b67c60e,16,processo_iniciado,backoff=sem_backoff validar=0
+1795170177.441,11e33b67c60e,16,crash,"TypeError(""int() argument must be a string, a bytes-like object or a real number, not 'NoneType'"")"
+1795170177.511,11e33b67c60e,7,processo_encerrado,codigo=1 duracao_s=0.83
+1795170177.514,11e33b67c60e,7,supervisor_aguardando,1.00
+1795170178.793,11e33b67c60e,18,processo_iniciado,backoff=sem_backoff validar=0
+1795170179.496,11e33b67c60e,18,crash,"TypeError(""int() argument must be a string, a bytes-like object or a real number, not 'NoneType'"")"
+1795170179.581,11e33b67c60e,7,processo_encerrado,codigo=1 duracao_s=1.05
+1795170179.587,11e33b67c60e,7,supervisor_aguardando,1.00
+1795170182.234,11e33b67c60e,20,processo_iniciado,backoff=sem_backoff validar=0
+1795170182.566,11e33b67c60e,20,politica_carregada,versao=3 tentativas=1
+1795170194.474,11e33b67c60e,20,recarga_falhou,TimeoutError
+1795170207.452,11e33b67c60e,20,recarga_falhou,TimeoutError
+1795170231.281,11e33b67c60e,20,recarga_falhou,TimeoutError
+1795170243.029,11e33b67c60e,20,recarga_falhou,TimeoutError
+1795170252.557,11e33b67c60e,20,recarga_falhou,HTTPError
+1795170257.566,11e33b67c60e,20,recarga_falhou,HTTPError
+1795170262.573,11e33b67c60e,20,recarga_falhou,HTTPError
+1795170267.579,11e33b67c60e,20,recarga_falhou,HTTPError
+1795170277.619,11e33b67c60e,20,recarga_falhou,HTTPError
+1795170282.629,11e33b67c60e,20,recarga_falhou,HTTPError
+1795170293.094,11e33b67c60e,20,recarga_falhou,HTTPError
+1795170298.098,11e33b67c60e,20,recarga_falhou,HTTPError
+1795170373.076,11e33b67c60e,20,recarga_falhou,HTTPError
+1795170378.143,11e33b67c60e,20,recarga_falhou,HTTPError
+1795170383.163,11e33b67c60e,20,recarga_falhou,HTTPError
+1795170388.322,11e33b67c60e,20,recarga_falhou,HTTPError
+1795170393.368,11e33b67c60e,20,recarga_falhou,HTTPError

@@ -1,0 +1,33 @@
+ts,replica,pid,evento,detalhe
+1795170174.993,c2572102e63b,7,supervisor_aguardando,1.33
+1795170177.992,c2572102e63b,8,processo_iniciado,backoff=sem_backoff validar=0
+1795170178.158,c2572102e63b,8,crash,"TypeError(""int() argument must be a string, a bytes-like object or a real number, not 'NoneType'"")"
+1795170178.298,c2572102e63b,7,processo_encerrado,codigo=1 duracao_s=1.97
+1795170178.298,c2572102e63b,7,supervisor_aguardando,1.00
+1795170179.536,c2572102e63b,10,processo_iniciado,backoff=sem_backoff validar=0
+1795170179.911,c2572102e63b,10,politica_carregada,versao=3 tentativas=1
+1795170207.257,c2572102e63b,10,recarga_falhou,TimeoutError
+1795170245.440,c2572102e63b,10,recarga_falhou,TimeoutError
+1795170250.502,c2572102e63b,10,recarga_falhou,HTTPError
+1795170255.513,c2572102e63b,10,recarga_falhou,HTTPError
+1795170260.521,c2572102e63b,10,recarga_falhou,HTTPError
+1795170265.527,c2572102e63b,10,recarga_falhou,HTTPError
+1795170270.608,c2572102e63b,10,recarga_falhou,HTTPError
+1795170275.534,c2572102e63b,10,recarga_falhou,HTTPError
+1795170280.592,c2572102e63b,10,recarga_falhou,HTTPError
+1795170285.621,c2572102e63b,10,recarga_falhou,HTTPError
+1795170290.626,c2572102e63b,10,recarga_falhou,HTTPError
+1795170300.734,c2572102e63b,10,recarga_falhou,HTTPError
+1795170305.722,c2572102e63b,10,recarga_falhou,HTTPError
+1795170310.728,c2572102e63b,10,recarga_falhou,HTTPError
+1795170315.733,c2572102e63b,10,recarga_falhou,HTTPError
+1795170320.883,c2572102e63b,10,recarga_falhou,HTTPError
+1795170325.897,c2572102e63b,10,recarga_falhou,HTTPError
+1795170330.901,c2572102e63b,10,recarga_falhou,HTTPError
+1795170335.895,c2572102e63b,10,recarga_falhou,HTTPError
+1795170340.941,c2572102e63b,10,recarga_falhou,HTTPError
+1795170345.953,c2572102e63b,10,recarga_falhou,HTTPError
+1795170350.963,c2572102e63b,10,recarga_falhou,HTTPError
+1795170367.937,c2572102e63b,10,recarga_falhou,HTTPError
+1795170383.670,c2572102e63b,10,recarga_falhou,HTTPError
+1795170393.797,c2572102e63b,10,recarga_falhou,HTTPError

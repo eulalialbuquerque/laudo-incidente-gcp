@@ -4,12 +4,11 @@ Ferramenta: Claude (Anthropic), usado para comparar os artigos com o projeto da
 equipe, escrever o código da miniatura e da análise e revisar o texto.
 
 Tudo o que o laudo relata como observado vem das execuções da equipe, guardadas
-em `logs/`. A IA não rodou a miniatura no Docker. Antes da entrega, ela só
-testou a lógica com processos locais, e esses logs de teste **não** fazem parte
-do repositório.
-
-> **A equipe precisa completar:** o Erro 2, encontrado ao rodar no Docker.
-> Apaguem esta nota antes de entregar.
+em `logs/`. A rodada 1 (`logs/*_r1`) foi rodada pela equipe no Docker, em
+Linux. A rodada 2 foi rodada no Docker Desktop do Windows, na máquina de Giulia,
+pelo Claude Code a pedido dela, para conferir se o passo a passo do README
+funciona em outro sistema. Foi essa conferência que revelou o Erro 2. Os testes
+locais que a IA fez antes, sem Docker, **não** fazem parte do repositório.
 
 ## Prompts mais importantes
 
@@ -35,13 +34,28 @@ do repositório.
 - **Correção:** a recuperação só é calculada quando houve falha (campo
   `houve_falha`), o valor é limitado a 0 com `max(0, ...)` e o resumo passa a
   mostrar "sem falha".
-- **Observação:** esse erro apareceu no teste local feito pela própria IA antes
-  da entrega. *A equipe deve confirmar ou substituir este item pelos erros que
-  encontrar ao rodar no Docker.*
+- **Observação:** o erro apareceu ao rodar o código da análise antes da primeira
+  execução no Docker. Com a correção, `logs/validacao_r1/resumo.md` mostra
+  "sem falha", como esperado.
 
-### Erro 2: *preencher ao rodar no Docker*
+### Erro 2: o cliente começava depois do incidente no Docker Desktop do Windows
 
-- **Onde:**
-- **Como apareceu:**
-- **Causa:**
-- **Correção:**
+- **Onde:** `docker-compose.yml`, ordem de subida do `injetor` e do `cliente`.
+- **Como apareceu:** ao rodar o README no Windows (Docker Desktop), o
+  `sem_backoff` deu só 0,3 % de erro e "recuperou antes da intervenção", o
+  contrário da rodada 1 em Linux (40,4 %). Em `cliente_eventos.csv`, o cliente
+  só começou 56 s depois da política em branco no `sem_backoff` e 101 s depois
+  no `jitter`, quando o red-button (t = 20 s) e até a intervenção (t = 80 s) já
+  tinham passado. Essas execuções estão guardadas em `logs/invalidas_windows/`
+  e não entram no laudo nem em `logs/comparacao.md`.
+- **Causa:** o `injetor` dependia só do `politicas` e começava a contar o
+  roteiro assim que o banco subia. O `cliente` dependia do `controle` e
+  esperava as 30 réplicas serem criadas, o que no Windows demora muito mais.
+  A IA supôs que todos os containers subiriam juntos; em Linux a diferença era
+  pequena e o erro não aparecia.
+- **Correção:** `depends_on: [politicas, cliente]` no `injetor`, para o roteiro
+  só começar com a carga já rodando. Rodamos de novo os 3 cenários no Windows
+  (`logs/*_r2`). Agora o cliente começa cerca de 31 s antes da política em
+  branco (`cliente_eventos.csv`), e o resultado reproduz o da rodada 1: sem
+  backoff, falha em 3 s e só volta depois da intervenção (72,0 s); com jitter,
+  volta sozinho em 16,8 s; com validação, nada falha (`logs/comparacao.md`).

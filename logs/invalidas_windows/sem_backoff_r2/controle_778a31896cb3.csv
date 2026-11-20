@@ -1,0 +1,59 @@
+ts,replica,pid,evento,detalhe
+1795170140.678,778a31896cb3,8,supervisor_aguardando,2.63
+1795170145.267,778a31896cb3,9,processo_iniciado,backoff=sem_backoff validar=0
+1795170145.490,778a31896cb3,9,politica_carregada,versao=1 tentativas=1
+1795170160.621,778a31896cb3,9,crash,"TypeError(""int() argument must be a string, a bytes-like object or a real number, not 'NoneType'"")"
+1795170161.324,778a31896cb3,8,processo_encerrado,codigo=1 duracao_s=18.32
+1795170161.332,778a31896cb3,8,supervisor_aguardando,1.00
+1795170162.927,778a31896cb3,11,processo_iniciado,backoff=sem_backoff validar=0
+1795170163.087,778a31896cb3,11,crash,"TypeError(""int() argument must be a string, a bytes-like object or a real number, not 'NoneType'"")"
+1795170163.223,778a31896cb3,8,processo_encerrado,codigo=1 duracao_s=0.88
+1795170163.228,778a31896cb3,8,supervisor_aguardando,1.00
+1795170164.833,778a31896cb3,13,processo_iniciado,backoff=sem_backoff validar=0
+1795170165.161,778a31896cb3,13,crash,"TypeError(""int() argument must be a string, a bytes-like object or a real number, not 'NoneType'"")"
+1795170165.332,778a31896cb3,8,processo_encerrado,codigo=1 duracao_s=1.10
+1795170165.342,778a31896cb3,8,supervisor_aguardando,1.00
+1795170167.426,778a31896cb3,15,processo_iniciado,backoff=sem_backoff validar=0
+1795170167.792,778a31896cb3,15,crash,"TypeError(""int() argument must be a string, a bytes-like object or a real number, not 'NoneType'"")"
+1795170167.897,778a31896cb3,8,processo_encerrado,codigo=1 duracao_s=1.53
+1795170167.902,778a31896cb3,8,supervisor_aguardando,1.00
+1795170169.818,778a31896cb3,17,processo_iniciado,backoff=sem_backoff validar=0
+1795170170.232,778a31896cb3,17,crash,"TypeError(""int() argument must be a string, a bytes-like object or a real number, not 'NoneType'"")"
+1795170170.409,778a31896cb3,8,processo_encerrado,codigo=1 duracao_s=1.51
+1795170170.424,778a31896cb3,8,supervisor_aguardando,1.00
+1795170172.165,778a31896cb3,19,processo_iniciado,backoff=sem_backoff validar=0
+1795170172.619,778a31896cb3,19,crash,"TypeError(""int() argument must be a string, a bytes-like object or a real number, not 'NoneType'"")"
+1795170172.750,778a31896cb3,8,processo_encerrado,codigo=1 duracao_s=1.28
+1795170172.750,778a31896cb3,8,supervisor_aguardando,1.00
+1795170175.089,778a31896cb3,21,processo_iniciado,backoff=sem_backoff validar=0
+1795170175.645,778a31896cb3,21,crash,"TypeError(""int() argument must be a string, a bytes-like object or a real number, not 'NoneType'"")"
+1795170175.744,778a31896cb3,8,processo_encerrado,codigo=1 duracao_s=1.99
+1795170175.746,778a31896cb3,8,supervisor_aguardando,1.00
+1795170177.526,778a31896cb3,23,processo_iniciado,backoff=sem_backoff validar=0
+1795170177.751,778a31896cb3,23,crash,"TypeError(""int() argument must be a string, a bytes-like object or a real number, not 'NoneType'"")"
+1795170177.969,778a31896cb3,8,processo_encerrado,codigo=1 duracao_s=1.22
+1795170177.970,778a31896cb3,8,supervisor_aguardando,1.00
+1795170179.697,778a31896cb3,25,processo_iniciado,backoff=sem_backoff validar=0
+1795170180.012,778a31896cb3,25,politica_carregada,versao=3 tentativas=1
+1795170207.308,778a31896cb3,25,recarga_falhou,TimeoutError
+1795170245.479,778a31896cb3,25,recarga_falhou,TimeoutError
+1795170250.509,778a31896cb3,25,recarga_falhou,HTTPError
+1795170255.517,778a31896cb3,25,recarga_falhou,HTTPError
+1795170260.526,778a31896cb3,25,recarga_falhou,HTTPError
+1795170265.534,778a31896cb3,25,recarga_falhou,HTTPError
+1795170270.616,778a31896cb3,25,recarga_falhou,HTTPError
+1795170275.538,778a31896cb3,25,recarga_falhou,HTTPError
+1795170280.608,778a31896cb3,25,recarga_falhou,HTTPError
+1795170295.833,778a31896cb3,25,recarga_falhou,HTTPError
+1795170300.838,778a31896cb3,25,recarga_falhou,HTTPError
+1795170305.825,778a31896cb3,25,recarga_falhou,HTTPError
+1795170310.831,778a31896cb3,25,recarga_falhou,HTTPError
+1795170315.836,778a31896cb3,25,recarga_falhou,HTTPError
+1795170321.007,778a31896cb3,25,recarga_falhou,HTTPError
+1795170326.013,778a31896cb3,25,recarga_falhou,HTTPError
+1795170336.110,778a31896cb3,25,recarga_falhou,HTTPError
+1795170346.234,778a31896cb3,25,recarga_falhou,HTTPError
+1795170356.359,778a31896cb3,25,recarga_falhou,HTTPError
+1795170362.625,778a31896cb3,25,recarga_falhou,HTTPError
+1795170368.379,778a31896cb3,25,recarga_falhou,HTTPError
+1795170384.363,778a31896cb3,25,recarga_falhou,HTTPError

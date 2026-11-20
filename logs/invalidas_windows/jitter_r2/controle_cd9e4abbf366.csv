@@ -1,0 +1,50 @@
+ts,replica,pid,evento,detalhe
+1795170521.850,cd9e4abbf366,7,supervisor_aguardando,0.07
+1795170524.953,cd9e4abbf366,8,processo_iniciado,backoff=jitter validar=0
+1795170525.214,cd9e4abbf366,8,politica_carregada,versao=1 tentativas=1
+1795170530.471,cd9e4abbf366,8,crash,"TypeError(""int() argument must be a string, a bytes-like object or a real number, not 'NoneType'"")"
+1795170530.699,cd9e4abbf366,7,processo_encerrado,codigo=1 duracao_s=8.78
+1795170530.715,cd9e4abbf366,7,supervisor_aguardando,0.06
+1795170531.596,cd9e4abbf366,10,processo_iniciado,backoff=jitter validar=0
+1795170531.765,cd9e4abbf366,10,crash,"TypeError(""int() argument must be a string, a bytes-like object or a real number, not 'NoneType'"")"
+1795170534.513,cd9e4abbf366,7,processo_encerrado,codigo=1 duracao_s=3.71
+1795170534.519,cd9e4abbf366,7,supervisor_aguardando,1.51
+1795170537.477,cd9e4abbf366,12,processo_iniciado,backoff=jitter validar=0
+1795170538.034,cd9e4abbf366,12,crash,"TypeError(""int() argument must be a string, a bytes-like object or a real number, not 'NoneType'"")"
+1795170538.182,cd9e4abbf366,7,processo_encerrado,codigo=1 duracao_s=2.09
+1795170538.219,cd9e4abbf366,7,supervisor_aguardando,1.00
+1795170539.338,cd9e4abbf366,14,processo_iniciado,backoff=jitter validar=0
+1795170539.461,cd9e4abbf366,14,crash,"TypeError(""int() argument must be a string, a bytes-like object or a real number, not 'NoneType'"")"
+1795170539.476,cd9e4abbf366,7,processo_encerrado,codigo=1 duracao_s=0.24
+1795170539.477,cd9e4abbf366,7,supervisor_aguardando,6.03
+1795170547.624,cd9e4abbf366,16,processo_iniciado,backoff=jitter validar=0
+1795170548.565,cd9e4abbf366,16,politica_carregada,versao=3 tentativas=1
+1795170582.296,cd9e4abbf366,16,recarga_falhou,TimeoutError
+1795170588.866,cd9e4abbf366,16,recarga_falhou,TimeoutError
+1795170619.827,cd9e4abbf366,16,recarga_falhou,HTTPError
+1795170624.856,cd9e4abbf366,16,recarga_falhou,HTTPError
+1795170635.075,cd9e4abbf366,16,recarga_falhou,HTTPError
+1795170640.781,cd9e4abbf366,16,recarga_falhou,HTTPError
+1795170645.865,cd9e4abbf366,16,recarga_falhou,HTTPError
+1795170650.877,cd9e4abbf366,16,recarga_falhou,HTTPError
+1795170655.881,cd9e4abbf366,16,recarga_falhou,HTTPError
+1795170665.993,cd9e4abbf366,16,recarga_falhou,HTTPError
+1795170670.946,cd9e4abbf366,16,recarga_falhou,HTTPError
+1795170675.953,cd9e4abbf366,16,recarga_falhou,HTTPError
+1795170680.962,cd9e4abbf366,16,recarga_falhou,HTTPError
+1795170691.084,cd9e4abbf366,16,recarga_falhou,HTTPError
+1795170696.089,cd9e4abbf366,16,recarga_falhou,HTTPError
+1795170701.076,cd9e4abbf366,16,recarga_falhou,HTTPError
+1795170706.080,cd9e4abbf366,16,recarga_falhou,HTTPError
+1795170711.084,cd9e4abbf366,16,recarga_falhou,HTTPError
+1795170716.090,cd9e4abbf366,16,recarga_falhou,HTTPError
+1795170726.205,cd9e4abbf366,16,recarga_falhou,HTTPError
+1795170731.156,cd9e4abbf366,16,recarga_falhou,HTTPError
+1795170736.161,cd9e4abbf366,16,recarga_falhou,HTTPError
+1795170741.166,cd9e4abbf366,16,recarga_falhou,HTTPError
+1795170746.170,cd9e4abbf366,16,recarga_falhou,HTTPError
+1795170751.174,cd9e4abbf366,16,recarga_falhou,HTTPError
+1795170761.280,cd9e4abbf366,16,recarga_falhou,HTTPError
+1795170766.286,cd9e4abbf366,16,recarga_falhou,HTTPError
+1795170771.291,cd9e4abbf366,16,recarga_falhou,HTTPError
+1795170781.404,cd9e4abbf366,16,recarga_falhou,HTTPError

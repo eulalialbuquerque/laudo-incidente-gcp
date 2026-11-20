@@ -1,0 +1,28 @@
+{
+  "execucao": "sem_backoff_r2",
+  "cenario": "sem_backoff",
+  "erro_base_pct": null,
+  "primeiro_erro_s": 57.59699988365173,
+  "houve_falha": true,
+  "tempo_ate_falha_s": 59,
+  "botao_vermelho_s": 19.908999919891357,
+  "intervencao_s": 79.81799983978271,
+  "recuperacao_s_apos_botao": 42.09100008010864,
+  "recuperou_antes_da_intervencao": true,
+  "erro_pct_desde_injecao": 0.2578116943384552,
+  "requisicoes_desde_injecao": 9697,
+  "erros_desde_injecao": 25,
+  "erro_pct_botao_ate_recuperar": 12.716763005780347,
+  "quedas_de_processo": 101,
+  "replicas": 30,
+  "politicas_chegadas_botao_ate_recuperar": 159,
+  "politicas_chegadas_por_replica": 5.3,
+  "politicas_desperdicio_pct": 10.062893081761006,
+  "politicas_recusadas": 0,
+  "politicas_ocupacao_max": 15,
+  "tipos_erro": {
+    "erro_ConnectionRefusedError": 17,
+    "503": 3,
+    "erro_TimeoutError": 5
+  }
+}

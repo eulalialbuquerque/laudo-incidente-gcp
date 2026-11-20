@@ -1,0 +1,33 @@
+ts,replica,pid,evento,detalhe
+1795170169.327,302b3b8873ec,7,supervisor_aguardando,5.73
+1795170176.527,302b3b8873ec,8,processo_iniciado,backoff=sem_backoff validar=0
+1795170176.756,302b3b8873ec,8,crash,"TypeError(""int() argument must be a string, a bytes-like object or a real number, not 'NoneType'"")"
+1795170176.856,302b3b8873ec,7,processo_encerrado,codigo=1 duracao_s=1.78
+1795170176.880,302b3b8873ec,7,supervisor_aguardando,1.00
+1795170178.282,302b3b8873ec,10,processo_iniciado,backoff=sem_backoff validar=0
+1795170178.509,302b3b8873ec,10,crash,"TypeError(""int() argument must be a string, a bytes-like object or a real number, not 'NoneType'"")"
+1795170178.566,302b3b8873ec,7,processo_encerrado,codigo=1 duracao_s=0.66
+1795170178.567,302b3b8873ec,7,supervisor_aguardando,1.00
+1795170179.802,302b3b8873ec,12,processo_iniciado,backoff=sem_backoff validar=0
+1795170180.403,302b3b8873ec,12,politica_carregada,versao=3 tentativas=1
+1795170231.633,302b3b8873ec,12,recarga_falhou,TimeoutError
+1795170243.019,302b3b8873ec,12,recarga_falhou,TimeoutError
+1795170247.455,302b3b8873ec,12,recarga_falhou,HTTPError
+1795170252.460,302b3b8873ec,12,recarga_falhou,HTTPError
+1795170262.572,302b3b8873ec,12,recarga_falhou,HTTPError
+1795170272.687,302b3b8873ec,12,recarga_falhou,HTTPError
+1795170277.617,302b3b8873ec,12,recarga_falhou,HTTPError
+1795170287.729,302b3b8873ec,12,recarga_falhou,HTTPError
+1795170293.093,302b3b8873ec,12,recarga_falhou,HTTPError
+1795170303.202,302b3b8873ec,12,recarga_falhou,HTTPError
+1795170308.191,302b3b8873ec,12,recarga_falhou,HTTPError
+1795170313.197,302b3b8873ec,12,recarga_falhou,HTTPError
+1795170323.309,302b3b8873ec,12,recarga_falhou,HTTPError
+1795170333.416,302b3b8873ec,12,recarga_falhou,HTTPError
+1795170343.527,302b3b8873ec,12,recarga_falhou,HTTPError
+1795170353.639,302b3b8873ec,12,recarga_falhou,HTTPError
+1795170363.778,302b3b8873ec,12,recarga_falhou,HTTPError
+1795170372.745,302b3b8873ec,12,recarga_falhou,TimeoutError
+1795170377.834,302b3b8873ec,12,recarga_falhou,HTTPError
+1795170388.139,302b3b8873ec,12,recarga_falhou,HTTPError
+1795170393.189,302b3b8873ec,12,recarga_falhou,HTTPError

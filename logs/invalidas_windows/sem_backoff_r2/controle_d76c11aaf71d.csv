@@ -1,0 +1,8 @@
+ts,replica,pid,evento,detalhe
+1795170210.189,d76c11aaf71d,8,supervisor_aguardando,5.84
+1795170220.744,d76c11aaf71d,9,processo_iniciado,backoff=sem_backoff validar=0
+1795170220.931,d76c11aaf71d,9,politica_carregada,versao=3 tentativas=1
+1795170232.286,d76c11aaf71d,9,recarga_falhou,TimeoutError
+1795170244.074,d76c11aaf71d,9,recarga_falhou,TimeoutError
+1795170373.980,d76c11aaf71d,9,recarga_falhou,HTTPError
+1795170401.547,d76c11aaf71d,9,recarga_falhou,HTTPError

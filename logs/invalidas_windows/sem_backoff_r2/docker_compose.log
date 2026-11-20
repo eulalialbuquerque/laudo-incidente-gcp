@@ -1,0 +1,77 @@
+controle-19  | 2026-11-20T10:23:40.341793042Z --------------------------------------------------------------------------------
+controle-19  | 2026-11-20T10:23:40.344547331Z Exception occurred during processing of request from ('172.21.0.32', 47444)
+controle-19  | 2026-11-20T10:23:40.348886228Z 
+controle-19  | 2026-11-20T10:23:40.367034145Z Exception occurred during processing of request from ('172.21.0.32', 47460)
+controle-19  | 2026-11-20T10:23:40.618253702Z Traceback (most recent call last):
+controle-19  | 2026-11-20T10:23:40.620033688Z Traceback (most recent call last):
+controle-19  | 2026-11-20T10:23:40.770131942Z   File "/usr/local/lib/python3.12/socketserver.py", line 697, in process_request_thread
+controle-19  | 2026-11-20T10:23:40.770250980Z     self.finish_request(request, client_address)
+controle-19  | 2026-11-20T10:23:40.770644278Z   File "/usr/local/lib/python3.12/socketserver.py", line 697, in process_request_thread
+controle-19  | 2026-11-20T10:23:40.770709689Z     self.finish_request(request, client_address)
+controle-19  | 2026-11-20T10:23:40.770714418Z   File "/usr/local/lib/python3.12/socketserver.py", line 362, in finish_request
+controle-29  | 2026-11-20T10:24:05.476964613Z ----------------------------------------
+controle-29  | 2026-11-20T10:24:05.484707838Z Exception occurred during processing of request from ('172.21.0.32', 45636)
+controle-29  | 2026-11-20T10:24:05.827949622Z Traceback (most recent call last):
+controle-29  | 2026-11-20T10:24:05.881830244Z   File "/usr/local/lib/python3.12/socketserver.py", line 697, in process_request_thread
+controle-29  | 2026-11-20T10:24:05.881886100Z     self.finish_request(request, client_address)
+controle-29  | 2026-11-20T10:24:05.881891734Z   File "/usr/local/lib/python3.12/socketserver.py", line 362, in finish_request
+controle-29  | 2026-11-20T10:24:05.881894419Z     self.RequestHandlerClass(request, client_address, self)
+controle-29  | 2026-11-20T10:24:05.881896909Z   File "/usr/local/lib/python3.12/socketserver.py", line 766, in __init__
+controle-29  | 2026-11-20T10:24:05.881899473Z     self.handle()
+controle-29  | 2026-11-20T10:24:05.881901787Z   File "/usr/local/lib/python3.12/http/server.py", line 440, in handle
+politicas-1  | 2026-11-20T10:22:09.169838129Z politicas ouvindo na porta 8000 (capacidade 1, custo 100 ms)
+controle-19  | 2026-11-20T10:23:40.770718122Z     self.RequestHandlerClass(request, client_address, self)
+controle-19  | 2026-11-20T10:23:40.770903879Z   File "/usr/local/lib/python3.12/socketserver.py", line 766, in __init__
+controle-19  | 2026-11-20T10:23:40.770922712Z     self.handle()
+controle-19  | 2026-11-20T10:23:40.770926813Z   File "/usr/local/lib/python3.12/socketserver.py", line 362, in finish_request
+controle-19  | 2026-11-20T10:23:40.770930265Z     self.RequestHandlerClass(request, client_address, self)
+controle-19  | 2026-11-20T10:23:40.771052953Z   File "/usr/local/lib/python3.12/socketserver.py", line 766, in __init__
+controle-19  | 2026-11-20T10:23:40.771065073Z     self.handle()
+controle-19  | 2026-11-20T10:23:40.771069014Z   File "/usr/local/lib/python3.12/http/server.py", line 440, in handle
+controle-19  | 2026-11-20T10:23:40.771072609Z     self.handle_one_request()
+controle-19  | 2026-11-20T10:23:40.771076496Z   File "/usr/local/lib/python3.12/http/server.py", line 428, in handle_one_request
+controle-19  | 2026-11-20T10:23:40.771079787Z     method()
+controle-19  | 2026-11-20T10:23:40.771082738Z   File "/app/controle.py", line 134, in do_GET
+controle-19  | 2026-11-20T10:23:40.771086307Z     self.wfile.write(dados)
+controle-19  | 2026-11-20T10:23:40.771092718Z   File "/usr/local/lib/python3.12/socketserver.py", line 845, in write
+controle-19  | 2026-11-20T10:23:40.771099730Z     self._sock.sendall(b)
+controle-19  | 2026-11-20T10:23:40.771103181Z BrokenPipeError: [Errno 32] Broken pipe
+controle-19  | 2026-11-20T10:23:40.783744670Z   File "/usr/local/lib/python3.12/http/server.py", line 440, in handle
+controle-19  | 2026-11-20T10:23:40.783795537Z     self.handle_one_request()
+controle-19  | 2026-11-20T10:23:40.795580162Z   File "/usr/local/lib/python3.12/http/server.py", line 428, in handle_one_request
+controle-19  | 2026-11-20T10:23:40.795685538Z     method()
+controle-19  | 2026-11-20T10:23:40.795698225Z ----------------------------------------  File "/app/controle.py", line 134, in do_GET
+controle-19  | 2026-11-20T10:23:40.795702645Z     self.wfile.write(dados)
+controle-19  | 2026-11-20T10:23:40.795706057Z   File "/usr/local/lib/python3.12/socketserver.py", line 845, in write
+controle-19  | 2026-11-20T10:23:40.795774159Z     self._sock.sendall(b)
+controle-19  | 2026-11-20T10:23:40.795780490Z BrokenPipeError: [Errno 32] Broken pipe
+controle-19  | 2026-11-20T10:23:40.795784386Z 
+controle-19  | 2026-11-20T10:23:40.796128098Z ----------------------------------------
+controle-29  | 2026-11-20T10:24:05.881903943Z     self.handle_one_request()
+controle-29  | 2026-11-20T10:24:05.881906155Z   File "/usr/local/lib/python3.12/http/server.py", line 428, in handle_one_request
+controle-29  | 2026-11-20T10:24:05.881908522Z     method()
+controle-29  | 2026-11-20T10:24:05.881910806Z   File "/app/controle.py", line 134, in do_GET
+controle-29  | 2026-11-20T10:24:05.881913332Z     self.wfile.write(dados)
+controle-29  | 2026-11-20T10:24:05.881917470Z   File "/usr/local/lib/python3.12/socketserver.py", line 845, in write
+controle-29  | 2026-11-20T10:24:05.881922635Z     self._sock.sendall(b)
+controle-29  | 2026-11-20T10:24:05.881925066Z BrokenPipeError: [Errno 32] Broken pipe
+controle-29  | 2026-11-20T10:24:05.885757445Z ----------------------------------------
+controle-3   | 2026-11-20T10:24:05.185186452Z ----------------------------------------
+controle-3   | 2026-11-20T10:24:05.322677077Z Exception occurred during processing of request from ('172.21.0.32', 48948)
+controle-3   | 2026-11-20T10:24:05.556264005Z Traceback (most recent call last):
+controle-3   | 2026-11-20T10:24:05.704723896Z   File "/usr/local/lib/python3.12/socketserver.py", line 697, in process_request_thread
+controle-3   | 2026-11-20T10:24:05.704773043Z     self.finish_request(request, client_address)
+controle-3   | 2026-11-20T10:24:05.704776714Z   File "/usr/local/lib/python3.12/socketserver.py", line 362, in finish_request
+controle-3   | 2026-11-20T10:24:05.704779777Z     self.RequestHandlerClass(request, client_address, self)
+controle-3   | 2026-11-20T10:24:05.704782267Z   File "/usr/local/lib/python3.12/socketserver.py", line 766, in __init__
+controle-3   | 2026-11-20T10:24:05.704784751Z     self.handle()
+controle-3   | 2026-11-20T10:24:05.704787019Z   File "/usr/local/lib/python3.12/http/server.py", line 440, in handle
+controle-3   | 2026-11-20T10:24:05.704789243Z     self.handle_one_request()
+controle-3   | 2026-11-20T10:24:05.704791435Z   File "/usr/local/lib/python3.12/http/server.py", line 428, in handle_one_request
+controle-3   | 2026-11-20T10:24:05.704793691Z     method()
+controle-3   | 2026-11-20T10:24:05.704795724Z   File "/app/controle.py", line 134, in do_GET
+controle-3   | 2026-11-20T10:24:05.704797860Z     self.wfile.write(dados)
+controle-3   | 2026-11-20T10:24:05.704800072Z   File "/usr/local/lib/python3.12/socketserver.py", line 845, in write
+controle-3   | 2026-11-20T10:24:05.704802476Z     self._sock.sendall(b)
+controle-3   | 2026-11-20T10:24:05.704846734Z BrokenPipeError: [Errno 32] Broken pipe
+controle-3   | 2026-11-20T10:24:05.707495097Z ----------------------------------------

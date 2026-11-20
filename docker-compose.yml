@@ -56,7 +56,11 @@ services:
     build: .
     command: ["python", "injetor.py"]
     init: true
-    depends_on: [politicas]
+    # O roteiro só começa depois que o cliente já está gerando carga. Antes
+    # dependia só de `politicas`: no Docker Desktop do Windows as 30 réplicas
+    # demoram a subir, o cliente (que espera o `controle`) começava até 100 s
+    # depois e não via o incidente (ver IA.md, Erro 2).
+    depends_on: [politicas, cliente]
     environment:
       PASTA_LOGS: /logs
       POLITICAS_URL: http://politicas:8000

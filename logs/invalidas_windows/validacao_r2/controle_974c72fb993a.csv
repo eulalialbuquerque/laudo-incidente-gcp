@@ -1,0 +1,18 @@
+ts,replica,pid,evento,detalhe
+1795170819.883,974c72fb993a,8,supervisor_aguardando,7.17
+1795170828.372,974c72fb993a,9,processo_iniciado,backoff=sem_backoff validar=1
+1795170828.683,974c72fb993a,9,politica_carregada,versao=1 tentativas=1
+1795170844.010,974c72fb993a,9,politica_recusada,versao=2
+1795170849.117,974c72fb993a,9,politica_recusada,versao=2
+1795170854.217,974c72fb993a,9,politica_recusada,versao=2
+1795170859.322,974c72fb993a,9,politica_recusada,versao=2
+1795170864.448,974c72fb993a,9,politica_atualizada,versao=3
+1795170925.619,974c72fb993a,9,recarga_falhou,HTTPError
+1795170930.623,974c72fb993a,9,recarga_falhou,HTTPError
+1795170935.626,974c72fb993a,9,recarga_falhou,HTTPError
+1795170945.729,974c72fb993a,9,recarga_falhou,HTTPError
+1795170950.733,974c72fb993a,9,recarga_falhou,HTTPError
+1795170955.736,974c72fb993a,9,recarga_falhou,HTTPError
+1795170960.740,974c72fb993a,9,recarga_falhou,HTTPError
+1795170965.745,974c72fb993a,9,recarga_falhou,HTTPError
+1795170975.848,974c72fb993a,9,recarga_falhou,HTTPError
